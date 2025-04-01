@@ -43,10 +43,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Pedro facudade\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\CLION\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Pedro facudade\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\CLION\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,15 +72,15 @@ CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flag
 CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/main.cpp
 CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj"
-	C:\PEDROF~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\main.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\main.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\main.cpp
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\main.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\main.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\main.cpp
 
 CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.i"
-	C:\PEDROF~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\main.cpp > CMakeFiles\fsoft2025_1DD_2.dir\main.cpp.i
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\main.cpp > CMakeFiles\fsoft2025_1DD_2.dir\main.cpp.i
 
 CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.s"
-	C:\PEDROF~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\main.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\main.cpp.s
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\main.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\main.cpp.s
 
 # Object files for target fsoft2025_1DD_2
 fsoft2025_1DD_2_OBJECTS = \
