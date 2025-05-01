@@ -1,5 +1,18 @@
 #include "../../headers/model/Product.h"
 
-Product::Product() {
-    // Implementação vazia para já
-}
+Product::Product() : id(0), name(""), brand(""), stock(0), category(""), description(""), priceSupplier(0.0f), priceClient(0.0f) {}
+
+Product::Product(int id, const std::string& name, const std::string& brand, int stock,
+                 const std::string& category, const std::string& description,
+                 float priceSupplier, float priceClient)
+    : id(id), name(name), brand(brand), stock(stock), category(category),
+      description(description), priceSupplier(priceSupplier), priceClient(priceClient) {}
+
+int Product::getId() const { return id; }
+std::string Product::getName() const { return name; }
+std::string Product::getBrand() const { return brand; }
+int Product::getStock() const { return stock; }
+std::string Product::getCategory() const { return category; }
+std::string Product::getDescription() const { return description; }
+float Product::getPriceClient() const { return priceClient; }
+float Product::getPriceSupplier() const { return priceSupplier; }

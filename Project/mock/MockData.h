@@ -1,8 +1,11 @@
-//
-// Created by HP on 01/05/2025.
-//
-
 #ifndef MOCKDATA_H
 #define MOCKDATA_H
 
-#endif //MOCKDATA_H
+#include "../headers/model/StepUp.h"
+
+class MockData {
+public:
+    void generateData(StepUp& store);
+};
+
+#endif // MOCKDATA_H

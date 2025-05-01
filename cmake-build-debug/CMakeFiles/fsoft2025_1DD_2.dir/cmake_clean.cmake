@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj.d"
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj"
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj.d"
+  "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj"
+  "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj.d"
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj"
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj.d"
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj"

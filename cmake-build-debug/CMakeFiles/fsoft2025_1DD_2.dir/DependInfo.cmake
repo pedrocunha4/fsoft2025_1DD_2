@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/mock/MockData.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/controllers/Controller.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Cart.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Client.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/ClientOrder.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Manager.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj.d"

@@ -150,6 +150,22 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj: \
  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/controllers/Controller.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/StepUp.h \
  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
@@ -163,5 +179,8 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj: \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Supplier.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/ClientOrder.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/SupplierOrder.h \
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Cart.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/views/View.h \
- C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/views/Utils.h
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/views/Utils.h \
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Cart.h \
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Product.h

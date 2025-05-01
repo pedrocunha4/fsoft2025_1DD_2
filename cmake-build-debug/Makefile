@@ -176,6 +176,30 @@ Project/sources/controllers/Controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.s
 .PHONY : Project/sources/controllers/Controller.cpp.s
 
+Project/sources/model/Cart.obj: Project/sources/model/Cart.cpp.obj
+.PHONY : Project/sources/model/Cart.obj
+
+# target to build an object file
+Project/sources/model/Cart.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj
+.PHONY : Project/sources/model/Cart.cpp.obj
+
+Project/sources/model/Cart.i: Project/sources/model/Cart.cpp.i
+.PHONY : Project/sources/model/Cart.i
+
+# target to preprocess a source file
+Project/sources/model/Cart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.i
+.PHONY : Project/sources/model/Cart.cpp.i
+
+Project/sources/model/Cart.s: Project/sources/model/Cart.cpp.s
+.PHONY : Project/sources/model/Cart.s
+
+# target to generate assembly for a file
+Project/sources/model/Cart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.s
+.PHONY : Project/sources/model/Cart.cpp.s
+
 Project/sources/model/Client.obj: Project/sources/model/Client.cpp.obj
 .PHONY : Project/sources/model/Client.obj
 
@@ -431,6 +455,9 @@ help:
 	@echo ... Project/sources/controllers/Controller.obj
 	@echo ... Project/sources/controllers/Controller.i
 	@echo ... Project/sources/controllers/Controller.s
+	@echo ... Project/sources/model/Cart.obj
+	@echo ... Project/sources/model/Cart.i
+	@echo ... Project/sources/model/Cart.s
 	@echo ... Project/sources/model/Client.obj
 	@echo ... Project/sources/model/Client.i
 	@echo ... Project/sources/model/Client.s

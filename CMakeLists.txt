@@ -35,4 +35,6 @@ add_executable(fsoft2025_1DD_2
         Project/mock/MockData.cpp
         Project/headers/views/Utils.h
         Project/sources/views/Utils.cpp
+        Project/headers/model/Cart.h
+        Project/sources/model/Cart.cpp
 )

@@ -1,7 +1,11 @@
 #include <iostream>
+#include <iomanip>
+#include <fstream>
 #include "../../headers/controllers/Controller.h"
 #include "../../headers/views/View.h"
 #include "../../headers/views/Utils.h"
+#include "../../headers/model/Cart.h"
+#include "../../headers/model/Product.h"
 
 Controller::Controller(StepUp &store) : store(store) {}
 
@@ -14,21 +18,18 @@ void Controller::run() {
         switch (option) {
             case 1:
                 runClient();
-            break;
+                break;
             case 2:
                 runManager();
-            break;
+                break;
             case 0:
                 std::cout << "Exiting StepUp Store...\n";
-            break;
+                break;
             default:
                 std::cout << "Invalid option. Try again.\n";
         }
     } while (option != 0);
 }
-
-#include "../../headers/controllers/Controller.h"
-#include "../../headers/views/View.h"
 
 void Controller::runClient() {
     int option;
@@ -39,12 +40,61 @@ void Controller::runClient() {
         switch (option) {
             case 1:
                 viewProductsGuest();
-            break;
+                break;
             case 2:
                 loginClient();
-            break;
+                break;
             case 3:
                 signUpClient();
+                break;
+            case 0:
+                std::cout << "Returning to main menu...\n";
+                break;
+            default:
+                std::cout << "Invalid option.\n";
+        }
+    } while (option != 0);
+}
+
+void Controller::viewProductsGuest() {
+    const auto& products = store.getProducts();
+    int option;
+    Cart cart;  // Criação do carrinho
+
+    std::cout << "\n--- Available Products ---\n";
+
+    if (products.empty()) {
+        std::cout << "No products available.\n";
+        return;
+    }
+
+    // Exibir produtos
+    for (const Product& p : products) {
+        std::cout << "ID: " << p.getId() << "\n";
+        std::cout << "Name: " << p.getName() << "\n";
+        std::cout << "Brand: " << p.getBrand() << "\n";
+        std::cout << "Category: " << p.getCategory() << "\n";
+        std::cout << "Description: " << p.getDescription() << "\n";
+        std::cout << "Price: " << std::fixed << std::setprecision(2)
+                  << p.getPriceClient() << " EUR\n";
+        std::cout << "Stock: " << p.getStock() << "\n";
+        std::cout << "--------------------------\n";
+    }
+
+    // Opções de carrinho
+    do {
+        std::cout << "1. Add to cart\n";
+        std::cout << "2. View cart\n";
+        std::cout << "0. Back to Main Menu\n";
+        std::cout << "Option: ";
+        std::cin >> option;
+
+        switch (option) {
+            case 1:
+                addToCart(cart);  // Adiciona o produto ao carrinho
+            break;
+            case 2:
+                viewCart(cart);  // Mostra os produtos no carrinho
             break;
             case 0:
                 std::cout << "Returning to main menu...\n";
@@ -55,10 +105,6 @@ void Controller::runClient() {
     } while (option != 0);
 }
 
-// Placeholder functions
-void Controller::viewProductsGuest() {
-    std::cout << "[Guest] Showing available products...\n";
-}
 
 void Controller::loginClient() {
     std::string email, password;
@@ -70,13 +116,12 @@ void Controller::loginClient() {
     std::cout << "Password: ";
     std::cin >> password;
 
-    for (const Client& c : store.getClients()) {
+    for (Client& c : store.getClients()) {  // <- remover const para permitir guardar ponteiro
         if (c.getEmail() == email && c.getPassword() == password) {
             std::cout << "Login successful! Welcome back, " << email << ".\n";
+            loggedInClient = &c;  // <- guardar o cliente autenticado
             found = true;
-
-            // TODO: chamar menu do cliente autenticado
-            // runClientLoggedMenu(c);
+            // runClientLoggedMenu(c); // se quiseres menus distintos
             break;
         }
     }
@@ -120,8 +165,97 @@ void Controller::signUpClient() {
     Client newClient(email, password);
     store.getClients().push_back(newClient);
 
+    // Guardar cliente no ficheiro
+    std::ofstream outFile("clients.txt", std::ios::app);
+    if (outFile.is_open()) {
+        outFile << email << " " << password << "\n";
+        outFile.close();
+    } else {
+        std::cout << "Error saving client to file.\n";
+    }
+
     std::cout << "Account created successfully!\n";
 }
+
+void Controller::addToCart(Cart& cart) {
+    int productId;
+    int quantity;
+
+    std::cout << "Enter the product ID: ";
+    std::cin >> productId;
+    std::cout << "Enter quantity: ";
+    std::cin >> quantity;
+
+    // Encontrar o produto pelo ID
+    for (const Product& p : store.getProducts()) {
+        if (p.getId() == productId) {
+            cart.addProduct(p, quantity);
+            std::cout << "Product added to cart.\n";
+            return;
+        }
+    }
+
+    std::cout << "Product not found.\n";
+}
+
+
+void Controller::viewCart(Cart& cart) {
+    int option;
+    do {
+        cart.showCart();  // Exibir o carrinho
+
+        std::cout << "\n--- Menu Cart ---\n";
+        std::cout << "1. Delete product\n";
+        std::cout << "2. Complete order (only authenticated clients)\n";
+        std::cout << "0. Go back to products menu\n";
+        std::cout << "Option: ";
+        std::cin >> option;
+
+        switch (option) {
+            case 1:
+                removeFromCart(cart);  // Remover produto
+            break;
+            case 2:
+                completeOrder(cart);  // Finalizar a encomenda
+            break;
+            case 0:
+                std::cout << "Returning to products menu...\n";
+            break;
+            default:
+                std::cout << "Invalid option. Please try again.\n";
+        }
+    } while (option != 0);  // Continua no menu do carrinho até o cliente escolher "0"
+}
+
+void Controller::removeFromCart(Cart& cart) {
+    int productId;
+    std::cout << "Enter the product ID to remove: ";
+    std::cin >> productId;
+
+    cart.removeProductById(productId);
+}
+
+void Controller::completeOrder(Cart& cart) {
+    if (cart.isEmpty()) {
+        std::cout << "Your cart is empty! Cannot complete order.\n";
+        return;
+    }
+
+    // Aqui, verificamos se o cliente está autenticado
+    if (isAuthenticated()) {
+        std::cout << "Order completed successfully!\n";
+        // Limpar o carrinho após a encomenda ser concluída
+        cart.clear();
+    } else {
+        std::cout << "You must be logged in to complete the order.\n";
+    }
+}
+
+// Função para verificar se o cliente está autenticado
+bool Controller::isAuthenticated() {
+    return loggedInClient != nullptr;
+}
+
 
 
 void Controller::runManager() {

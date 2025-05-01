@@ -118,4 +118,8 @@ CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj: \
  C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project/headers/model/ClientOrder.h \
  C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project/headers/model/SupplierOrder.h \
  C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project/headers/controllers/Controller.h \
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/StepUp.h \
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Cart.h \
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Product.h \
+ C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project/mock/MockData.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/StepUp.h
