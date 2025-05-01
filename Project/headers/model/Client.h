@@ -9,7 +9,11 @@ private:
     std::string password;
 
 public:
-    Client();
+    Client(); // vazio
+    Client(const std::string& email, const std::string& password);
+
+    std::string getEmail() const;
+    std::string getPassword() const;
 };
 
 #endif // CLIENT_H

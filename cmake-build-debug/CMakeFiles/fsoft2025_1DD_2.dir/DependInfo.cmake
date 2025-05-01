@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/StepUp.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Supplier.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/SupplierOrder.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/views/Utils.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/Utils.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/Utils.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/views/View.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/main.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj.d"
   )

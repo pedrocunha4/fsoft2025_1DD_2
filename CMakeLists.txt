@@ -33,4 +33,6 @@ add_executable(fsoft2025_1DD_2
 
         # Mock
         Project/mock/MockData.cpp
+        Project/headers/views/Utils.h
+        Project/sources/views/Utils.cpp
 )

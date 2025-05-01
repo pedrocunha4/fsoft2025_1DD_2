@@ -344,6 +344,30 @@ Project/sources/model/SupplierOrder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.s
 .PHONY : Project/sources/model/SupplierOrder.cpp.s
 
+Project/sources/views/Utils.obj: Project/sources/views/Utils.cpp.obj
+.PHONY : Project/sources/views/Utils.obj
+
+# target to build an object file
+Project/sources/views/Utils.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/Utils.cpp.obj
+.PHONY : Project/sources/views/Utils.cpp.obj
+
+Project/sources/views/Utils.i: Project/sources/views/Utils.cpp.i
+.PHONY : Project/sources/views/Utils.i
+
+# target to preprocess a source file
+Project/sources/views/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/Utils.cpp.i
+.PHONY : Project/sources/views/Utils.cpp.i
+
+Project/sources/views/Utils.s: Project/sources/views/Utils.cpp.s
+.PHONY : Project/sources/views/Utils.s
+
+# target to generate assembly for a file
+Project/sources/views/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/Utils.cpp.s
+.PHONY : Project/sources/views/Utils.cpp.s
+
 Project/sources/views/View.obj: Project/sources/views/View.cpp.obj
 .PHONY : Project/sources/views/View.obj
 
@@ -428,6 +452,9 @@ help:
 	@echo ... Project/sources/model/SupplierOrder.obj
 	@echo ... Project/sources/model/SupplierOrder.i
 	@echo ... Project/sources/model/SupplierOrder.s
+	@echo ... Project/sources/views/Utils.obj
+	@echo ... Project/sources/views/Utils.i
+	@echo ... Project/sources/views/Utils.s
 	@echo ... Project/sources/views/View.obj
 	@echo ... Project/sources/views/View.i
 	@echo ... Project/sources/views/View.s

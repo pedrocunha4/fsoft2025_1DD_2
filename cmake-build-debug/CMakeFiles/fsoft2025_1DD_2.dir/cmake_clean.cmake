@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj.d"
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj"
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj.d"
+  "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/Utils.cpp.obj"
+  "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/Utils.cpp.obj.d"
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj"
   "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj.d"
   "CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj"
