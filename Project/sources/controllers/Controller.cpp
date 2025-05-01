@@ -151,7 +151,7 @@ void Controller::runClientLoggedMenu() {
 
         switch (option) {
             case 1:
-                viewProductsGuest();  // Podes depois adaptar para mostrar + detalhes
+                viewProductsGuest();
             break;
             case 2:
                 viewCart(cart);

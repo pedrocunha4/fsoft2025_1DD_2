@@ -1,7 +1,7 @@
 #ifndef CART_H
 #define CART_H
 
-#include "Product.h" // Para que o compilador saiba o que é Product
+#include "Product.h"
 #include <vector>
 
 class Cart {
