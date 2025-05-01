@@ -116,12 +116,12 @@ void Controller::loginClient() {
     std::cout << "Password: ";
     std::cin >> password;
 
-    for (Client& c : store.getClients()) {  // <- remover const para permitir guardar ponteiro
+    for (Client& c : store.getClients()) {
         if (c.getEmail() == email && c.getPassword() == password) {
             std::cout << "Login successful! Welcome back, " << email << ".\n";
             loggedInClient = &c;  // <- guardar o cliente autenticado
             found = true;
-            // runClientLoggedMenu(c); // se quiseres menus distintos
+            runClientLoggedMenu();
             break;
         }
     }
@@ -131,6 +131,44 @@ void Controller::loginClient() {
     }
 }
 
+void Controller::runClientLoggedMenu() {
+    if (!isAuthenticated()) {
+        std::cout << "Access denied. Please login first.\n";
+        return;
+    }
+
+    Cart cart;
+    int option;
+
+    do {
+        std::cout << "\n--- Client Menu ---\n";
+        std::cout << "1 - View products\n";
+        std::cout << "2 - View cart\n";
+        std::cout << "3 - View orders\n";
+        std::cout << "0 - Logout\n";
+        std::cout << "Option: ";
+        std::cin >> option;
+
+        switch (option) {
+            case 1:
+                viewProductsGuest();  // Podes depois adaptar para mostrar + detalhes
+            break;
+            case 2:
+                viewCart(cart);
+            break;
+            case 3:
+                // TODO: mostrar histórico de encomendas
+                    std::cout << "[View orders] Not implemented yet.\n";
+            break;
+            case 0:
+                std::cout << "Logging out...\n";
+            loggedInClient = nullptr;  // Efetua logout
+            break;
+            default:
+                std::cout << "Invalid option.\n";
+        }
+    } while (option != 0);
+}
 
 void Controller::signUpClient() {
     std::string email, password;

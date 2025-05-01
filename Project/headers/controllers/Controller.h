@@ -17,6 +17,7 @@
         void loginClient();
         void signUpClient();
         void viewProductsGuest();
+        void runClientLoggedMenu();
 
         void addToCart(Cart& cart);
         void viewCart(Cart& cart);
