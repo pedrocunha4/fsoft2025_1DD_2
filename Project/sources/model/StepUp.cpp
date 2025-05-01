@@ -1,5 +1,7 @@
 #include "../../headers/model/StepUp.h"
 
+#include <stdexcept>
+
 StepUp::StepUp() {
     // vazio por agora
 }
@@ -27,3 +29,12 @@ std::vector<ClientOrder>& StepUp::getClientOrders() {
 std::vector<SupplierOrder>& StepUp::getSupplierOrders() {
     return supplierOrders;
 }
+
+Product& StepUp::findProductById(int id) {
+    for (auto& p : products) {
+        if (p.getId() == id)
+            return p;
+    }
+    throw std::runtime_error("Product not found.");
+}
+

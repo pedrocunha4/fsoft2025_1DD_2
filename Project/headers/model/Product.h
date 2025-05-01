@@ -28,6 +28,7 @@ public:
     std::string getDescription() const;
     float getPriceClient() const;
     float getPriceSupplier() const; // usado só pelo gerente
+    void reduceStock(int quantity);
 };
 
 #endif // PRODUCT_H

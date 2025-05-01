@@ -116,4 +116,10 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj: \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Manager.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Supplier.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/ClientOrder.h \
- C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/SupplierOrder.h
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/SupplierOrder.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h

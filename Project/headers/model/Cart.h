@@ -15,6 +15,8 @@ public:
     float getTotal() const;
     bool isEmpty() const;
     void clear();
+    const std::vector<std::pair<Product, int>>& getItems() const;
+
 };
 
 #endif // CART_H

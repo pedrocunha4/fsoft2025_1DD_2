@@ -27,6 +27,8 @@ public:
     std::vector<Supplier>& getSuppliers();
     std::vector<ClientOrder>& getClientOrders();
     std::vector<SupplierOrder>& getSupplierOrders();
+    Product& findProductById(int id);
+
 };
 
 #endif // STEPUP_H

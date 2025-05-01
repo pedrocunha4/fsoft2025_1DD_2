@@ -16,3 +16,8 @@ std::string Product::getCategory() const { return category; }
 std::string Product::getDescription() const { return description; }
 float Product::getPriceClient() const { return priceClient; }
 float Product::getPriceSupplier() const { return priceSupplier; }
+
+void Product::reduceStock(int quantity) {
+    if (quantity <= stock)
+        stock -= quantity;
+}

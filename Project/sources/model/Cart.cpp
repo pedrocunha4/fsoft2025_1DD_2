@@ -66,6 +66,10 @@ void Cart::clear() {
     items.clear();  // Limpa todos os itens no carrinho
 }
 
+const std::vector<std::pair<Product, int>>& Cart::getItems() const {
+    return items;
+}
+
 
 
 

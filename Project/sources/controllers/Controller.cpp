@@ -227,6 +227,11 @@ void Controller::addToCart(Cart& cart) {
     // Encontrar o produto pelo ID
     for (const Product& p : store.getProducts()) {
         if (p.getId() == productId) {
+            if (quantity > p.getStock()) {
+                std::cout << "Error: Only " << p.getStock() << " units in stock.\n";
+                return;
+            }
+
             cart.addProduct(p, quantity);
             std::cout << "Product added to cart.\n";
             return;
@@ -235,7 +240,6 @@ void Controller::addToCart(Cart& cart) {
 
     std::cout << "Product not found.\n";
 }
-
 
 void Controller::viewCart(Cart& cart) {
     int option;
@@ -279,14 +283,23 @@ void Controller::completeOrder(Cart& cart) {
         return;
     }
 
-    // Aqui, verificamos se o cliente está autenticado
-    if (isAuthenticated()) {
-        std::cout << "Order completed successfully!\n";
-        // Limpar o carrinho após a encomenda ser concluída
-        cart.clear();
-    } else {
+    if (!isAuthenticated()) {
         std::cout << "You must be logged in to complete the order.\n";
+        return;
     }
+
+    // Subtrair stock
+    for (const auto& item : cart.getItems()) {
+        Product& product = store.findProductById(item.first.getId());
+        if (item.second > product.getStock()) {
+            std::cout << "Error: Product " << product.getName() << " doesn't have enough stock.\n";
+            return;
+        }
+        product.reduceStock(item.second);
+    }
+
+    std::cout << "Order completed successfully!\n";
+    cart.clear();
 }
 
 // Função para verificar se o cliente está autenticado
