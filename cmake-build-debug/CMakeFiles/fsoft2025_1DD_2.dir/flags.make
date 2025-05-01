@@ -4,7 +4,7 @@
 # compile CXX with C:/CLION/CLion 2024.3.3/bin/mingw/bin/g++.exe
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = @CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
 
 CXX_FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
 

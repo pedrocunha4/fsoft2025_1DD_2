@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.30"
+						"string" : "3.10"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "fsoft2025_1DD_2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-fsoft2025_1DD_2-Debug-b363385ccab7acf25ea7.json",
+					"jsonFile" : "target-fsoft2025_1DD_2-Debug-cf50c2c3deef65b7e578.json",
 					"name" : "fsoft2025_1DD_2",
 					"projectIndex" : 0
 				}

@@ -8,6 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/mock/MockData.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/controllers/Controller.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Client.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/ClientOrder.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Manager.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Product.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/StepUp.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Supplier.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/SupplierOrder.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/views/View.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/main.cpp" "CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj" "gcc" "CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj.d"
   )
 

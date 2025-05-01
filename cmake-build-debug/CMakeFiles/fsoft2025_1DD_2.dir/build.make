@@ -69,6 +69,7 @@ include CMakeFiles/fsoft2025_1DD_2.dir/progress.make
 include CMakeFiles/fsoft2025_1DD_2.dir/flags.make
 
 CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
 CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/main.cpp
 CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj"
@@ -82,19 +83,189 @@ CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.s"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\main.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\main.cpp.s
 
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/controllers/Controller.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\controllers\Controller.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\controllers\Controller.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\controllers\Controller.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\controllers\Controller.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\controllers\Controller.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\controllers\Controller.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\controllers\Controller.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/views/View.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\views\View.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\views\View.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\views\View.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\views\View.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\views\View.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\views\View.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\views\View.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/StepUp.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\StepUp.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\StepUp.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\StepUp.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\StepUp.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\StepUp.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\StepUp.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\StepUp.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Product.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Product.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Product.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Product.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Product.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Product.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Product.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Product.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Client.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Client.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Client.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Client.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Client.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Client.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Client.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Client.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Manager.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Manager.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Manager.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Manager.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Manager.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Manager.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Manager.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Manager.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/Supplier.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Supplier.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Supplier.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Supplier.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Supplier.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Supplier.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\Supplier.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Supplier.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/ClientOrder.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\ClientOrder.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\ClientOrder.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\ClientOrder.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\ClientOrder.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\ClientOrder.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\ClientOrder.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\ClientOrder.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/sources/model/SupplierOrder.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\SupplierOrder.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\SupplierOrder.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\SupplierOrder.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\SupplierOrder.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\SupplierOrder.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\sources\model\SupplierOrder.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\SupplierOrder.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj: C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/mock/MockData.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\mock\MockData.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\mock\MockData.cpp.obj -c C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\mock\MockData.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\mock\MockData.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\mock\MockData.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\Project\mock\MockData.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\mock\MockData.cpp.s
+
 # Object files for target fsoft2025_1DD_2
 fsoft2025_1DD_2_OBJECTS = \
-"CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj"
+"CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj"
 
 # External object files for target fsoft2025_1DD_2
 fsoft2025_1DD_2_EXTERNAL_OBJECTS =
 
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/build.make
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/linkLibs.rsp
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/objects1.rsp
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable fsoft2025_1DD_2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HP\Documents\GitHub\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable fsoft2025_1DD_2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\fsoft2025_1DD_2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

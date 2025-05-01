@@ -128,6 +128,246 @@ fsoft2025_1DD_2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/build
 .PHONY : fsoft2025_1DD_2/fast
 
+Project/mock/MockData.obj: Project/mock/MockData.cpp.obj
+.PHONY : Project/mock/MockData.obj
+
+# target to build an object file
+Project/mock/MockData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj
+.PHONY : Project/mock/MockData.cpp.obj
+
+Project/mock/MockData.i: Project/mock/MockData.cpp.i
+.PHONY : Project/mock/MockData.i
+
+# target to preprocess a source file
+Project/mock/MockData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.i
+.PHONY : Project/mock/MockData.cpp.i
+
+Project/mock/MockData.s: Project/mock/MockData.cpp.s
+.PHONY : Project/mock/MockData.s
+
+# target to generate assembly for a file
+Project/mock/MockData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.s
+.PHONY : Project/mock/MockData.cpp.s
+
+Project/sources/controllers/Controller.obj: Project/sources/controllers/Controller.cpp.obj
+.PHONY : Project/sources/controllers/Controller.obj
+
+# target to build an object file
+Project/sources/controllers/Controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj
+.PHONY : Project/sources/controllers/Controller.cpp.obj
+
+Project/sources/controllers/Controller.i: Project/sources/controllers/Controller.cpp.i
+.PHONY : Project/sources/controllers/Controller.i
+
+# target to preprocess a source file
+Project/sources/controllers/Controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.i
+.PHONY : Project/sources/controllers/Controller.cpp.i
+
+Project/sources/controllers/Controller.s: Project/sources/controllers/Controller.cpp.s
+.PHONY : Project/sources/controllers/Controller.s
+
+# target to generate assembly for a file
+Project/sources/controllers/Controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.s
+.PHONY : Project/sources/controllers/Controller.cpp.s
+
+Project/sources/model/Client.obj: Project/sources/model/Client.cpp.obj
+.PHONY : Project/sources/model/Client.obj
+
+# target to build an object file
+Project/sources/model/Client.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj
+.PHONY : Project/sources/model/Client.cpp.obj
+
+Project/sources/model/Client.i: Project/sources/model/Client.cpp.i
+.PHONY : Project/sources/model/Client.i
+
+# target to preprocess a source file
+Project/sources/model/Client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.i
+.PHONY : Project/sources/model/Client.cpp.i
+
+Project/sources/model/Client.s: Project/sources/model/Client.cpp.s
+.PHONY : Project/sources/model/Client.s
+
+# target to generate assembly for a file
+Project/sources/model/Client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.s
+.PHONY : Project/sources/model/Client.cpp.s
+
+Project/sources/model/ClientOrder.obj: Project/sources/model/ClientOrder.cpp.obj
+.PHONY : Project/sources/model/ClientOrder.obj
+
+# target to build an object file
+Project/sources/model/ClientOrder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj
+.PHONY : Project/sources/model/ClientOrder.cpp.obj
+
+Project/sources/model/ClientOrder.i: Project/sources/model/ClientOrder.cpp.i
+.PHONY : Project/sources/model/ClientOrder.i
+
+# target to preprocess a source file
+Project/sources/model/ClientOrder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.i
+.PHONY : Project/sources/model/ClientOrder.cpp.i
+
+Project/sources/model/ClientOrder.s: Project/sources/model/ClientOrder.cpp.s
+.PHONY : Project/sources/model/ClientOrder.s
+
+# target to generate assembly for a file
+Project/sources/model/ClientOrder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.s
+.PHONY : Project/sources/model/ClientOrder.cpp.s
+
+Project/sources/model/Manager.obj: Project/sources/model/Manager.cpp.obj
+.PHONY : Project/sources/model/Manager.obj
+
+# target to build an object file
+Project/sources/model/Manager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj
+.PHONY : Project/sources/model/Manager.cpp.obj
+
+Project/sources/model/Manager.i: Project/sources/model/Manager.cpp.i
+.PHONY : Project/sources/model/Manager.i
+
+# target to preprocess a source file
+Project/sources/model/Manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.i
+.PHONY : Project/sources/model/Manager.cpp.i
+
+Project/sources/model/Manager.s: Project/sources/model/Manager.cpp.s
+.PHONY : Project/sources/model/Manager.s
+
+# target to generate assembly for a file
+Project/sources/model/Manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.s
+.PHONY : Project/sources/model/Manager.cpp.s
+
+Project/sources/model/Product.obj: Project/sources/model/Product.cpp.obj
+.PHONY : Project/sources/model/Product.obj
+
+# target to build an object file
+Project/sources/model/Product.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj
+.PHONY : Project/sources/model/Product.cpp.obj
+
+Project/sources/model/Product.i: Project/sources/model/Product.cpp.i
+.PHONY : Project/sources/model/Product.i
+
+# target to preprocess a source file
+Project/sources/model/Product.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.i
+.PHONY : Project/sources/model/Product.cpp.i
+
+Project/sources/model/Product.s: Project/sources/model/Product.cpp.s
+.PHONY : Project/sources/model/Product.s
+
+# target to generate assembly for a file
+Project/sources/model/Product.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.s
+.PHONY : Project/sources/model/Product.cpp.s
+
+Project/sources/model/StepUp.obj: Project/sources/model/StepUp.cpp.obj
+.PHONY : Project/sources/model/StepUp.obj
+
+# target to build an object file
+Project/sources/model/StepUp.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj
+.PHONY : Project/sources/model/StepUp.cpp.obj
+
+Project/sources/model/StepUp.i: Project/sources/model/StepUp.cpp.i
+.PHONY : Project/sources/model/StepUp.i
+
+# target to preprocess a source file
+Project/sources/model/StepUp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.i
+.PHONY : Project/sources/model/StepUp.cpp.i
+
+Project/sources/model/StepUp.s: Project/sources/model/StepUp.cpp.s
+.PHONY : Project/sources/model/StepUp.s
+
+# target to generate assembly for a file
+Project/sources/model/StepUp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.s
+.PHONY : Project/sources/model/StepUp.cpp.s
+
+Project/sources/model/Supplier.obj: Project/sources/model/Supplier.cpp.obj
+.PHONY : Project/sources/model/Supplier.obj
+
+# target to build an object file
+Project/sources/model/Supplier.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj
+.PHONY : Project/sources/model/Supplier.cpp.obj
+
+Project/sources/model/Supplier.i: Project/sources/model/Supplier.cpp.i
+.PHONY : Project/sources/model/Supplier.i
+
+# target to preprocess a source file
+Project/sources/model/Supplier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.i
+.PHONY : Project/sources/model/Supplier.cpp.i
+
+Project/sources/model/Supplier.s: Project/sources/model/Supplier.cpp.s
+.PHONY : Project/sources/model/Supplier.s
+
+# target to generate assembly for a file
+Project/sources/model/Supplier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.s
+.PHONY : Project/sources/model/Supplier.cpp.s
+
+Project/sources/model/SupplierOrder.obj: Project/sources/model/SupplierOrder.cpp.obj
+.PHONY : Project/sources/model/SupplierOrder.obj
+
+# target to build an object file
+Project/sources/model/SupplierOrder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj
+.PHONY : Project/sources/model/SupplierOrder.cpp.obj
+
+Project/sources/model/SupplierOrder.i: Project/sources/model/SupplierOrder.cpp.i
+.PHONY : Project/sources/model/SupplierOrder.i
+
+# target to preprocess a source file
+Project/sources/model/SupplierOrder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.i
+.PHONY : Project/sources/model/SupplierOrder.cpp.i
+
+Project/sources/model/SupplierOrder.s: Project/sources/model/SupplierOrder.cpp.s
+.PHONY : Project/sources/model/SupplierOrder.s
+
+# target to generate assembly for a file
+Project/sources/model/SupplierOrder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.s
+.PHONY : Project/sources/model/SupplierOrder.cpp.s
+
+Project/sources/views/View.obj: Project/sources/views/View.cpp.obj
+.PHONY : Project/sources/views/View.obj
+
+# target to build an object file
+Project/sources/views/View.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.obj
+.PHONY : Project/sources/views/View.cpp.obj
+
+Project/sources/views/View.i: Project/sources/views/View.cpp.i
+.PHONY : Project/sources/views/View.i
+
+# target to preprocess a source file
+Project/sources/views/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.i
+.PHONY : Project/sources/views/View.cpp.i
+
+Project/sources/views/View.s: Project/sources/views/View.cpp.s
+.PHONY : Project/sources/views/View.s
+
+# target to generate assembly for a file
+Project/sources/views/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.s
+.PHONY : Project/sources/views/View.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +401,36 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... fsoft2025_1DD_2
+	@echo ... Project/mock/MockData.obj
+	@echo ... Project/mock/MockData.i
+	@echo ... Project/mock/MockData.s
+	@echo ... Project/sources/controllers/Controller.obj
+	@echo ... Project/sources/controllers/Controller.i
+	@echo ... Project/sources/controllers/Controller.s
+	@echo ... Project/sources/model/Client.obj
+	@echo ... Project/sources/model/Client.i
+	@echo ... Project/sources/model/Client.s
+	@echo ... Project/sources/model/ClientOrder.obj
+	@echo ... Project/sources/model/ClientOrder.i
+	@echo ... Project/sources/model/ClientOrder.s
+	@echo ... Project/sources/model/Manager.obj
+	@echo ... Project/sources/model/Manager.i
+	@echo ... Project/sources/model/Manager.s
+	@echo ... Project/sources/model/Product.obj
+	@echo ... Project/sources/model/Product.i
+	@echo ... Project/sources/model/Product.s
+	@echo ... Project/sources/model/StepUp.obj
+	@echo ... Project/sources/model/StepUp.i
+	@echo ... Project/sources/model/StepUp.s
+	@echo ... Project/sources/model/Supplier.obj
+	@echo ... Project/sources/model/Supplier.i
+	@echo ... Project/sources/model/Supplier.s
+	@echo ... Project/sources/model/SupplierOrder.obj
+	@echo ... Project/sources/model/SupplierOrder.i
+	@echo ... Project/sources/model/SupplierOrder.s
+	@echo ... Project/sources/views/View.obj
+	@echo ... Project/sources/views/View.i
+	@echo ... Project/sources/views/View.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
