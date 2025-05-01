@@ -34,7 +34,7 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/CLION/CLion 2024.3.3/bin/mingw/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Pedro facudade/CLion 2024.3.3/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

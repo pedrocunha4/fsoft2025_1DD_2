@@ -59,7 +59,17 @@ void Controller::runClient() {
 void Controller::viewProductsGuest() {
     const auto& products = store.getProducts();
     int option;
-    Cart cart;  // Criação do carrinho
+
+    // 🔐 Determinar qual carrinho usar
+    Cart* cartPtr = nullptr;
+    if (isAuthenticated()) {
+        cartPtr = &clientCarts[loggedInClient->getEmail()];
+    } else {
+        static Cart guestCart;  // carrinho temporário para clientes não logados
+        cartPtr = &guestCart;
+    }
+
+    Cart& cart = *cartPtr;  // referência ao carrinho correto
 
     std::cout << "\n--- Available Products ---\n";
 
@@ -68,7 +78,6 @@ void Controller::viewProductsGuest() {
         return;
     }
 
-    // Exibir produtos
     for (const Product& p : products) {
         std::cout << "ID: " << p.getId() << "\n";
         std::cout << "Name: " << p.getName() << "\n";
@@ -81,30 +90,28 @@ void Controller::viewProductsGuest() {
         std::cout << "--------------------------\n";
     }
 
-    // Opções de carrinho
     do {
         std::cout << "1. Add to cart\n";
         std::cout << "2. View cart\n";
-        std::cout << "0. Back to Main Menu\n";
+        std::cout << "0. Back to menu\n";
         std::cout << "Option: ";
         std::cin >> option;
 
         switch (option) {
             case 1:
-                addToCart(cart);  // Adiciona o produto ao carrinho
+                addToCart(cart);
             break;
             case 2:
-                viewCart(cart);  // Mostra os produtos no carrinho
+                viewCart(cart);
             break;
             case 0:
-                std::cout << "Returning to main menu...\n";
+                std::cout << "Returning...\n";
             break;
             default:
                 std::cout << "Invalid option.\n";
         }
     } while (option != 0);
 }
-
 
 void Controller::loginClient() {
     std::string email, password;
@@ -137,9 +144,9 @@ void Controller::runClientLoggedMenu() {
         return;
     }
 
-    Cart cart;
-    int option;
+    Cart& cart = clientCarts[loggedInClient->getEmail()];  // Carrinho pessoal do cliente
 
+    int option;
     do {
         std::cout << "\n--- Client Menu ---\n";
         std::cout << "1 - View products\n";
@@ -248,7 +255,7 @@ void Controller::viewCart(Cart& cart) {
 
         std::cout << "\n--- Menu Cart ---\n";
         std::cout << "1. Delete product\n";
-        std::cout << "2. Complete order (only authenticated clients)\n";
+        std::cout << "2. Complete order\n";
         std::cout << "0. Go back to products menu\n";
         std::cout << "Option: ";
         std::cin >> option;
