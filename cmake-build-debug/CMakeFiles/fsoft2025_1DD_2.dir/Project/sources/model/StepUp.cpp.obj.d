@@ -113,9 +113,9 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj: \
  C:/Pedro\ facudade/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
  C:/Pedro\ facudade/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Client.h \
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/ClientOrder.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Manager.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Supplier.h \
- C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/ClientOrder.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/SupplierOrder.h \
  C:/Pedro\ facudade/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
  C:/Pedro\ facudade/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \

@@ -32,6 +32,9 @@ public:
     void removeFromCart(Cart& cart);
     void completeOrder(Cart& cart);
 
+    //Encomendas
+    void showClientOrders();
+
     // Autenticação
     bool isAuthenticated();
 };

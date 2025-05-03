@@ -6,6 +6,7 @@
 #include "../../headers/views/Utils.h"
 #include "../../headers/model/Cart.h"
 #include "../../headers/model/Product.h"
+#include "../../headers/model/ClientOrder.h"
 
 Controller::Controller(StepUp &store) : store(store) {}
 
@@ -60,7 +61,7 @@ void Controller::viewProductsGuest() {
     const auto& products = store.getProducts();
     int option;
 
-    // 🔐 Determinar qual carrinho usar
+    // Determinar qual carrinho usar
     Cart* cartPtr = nullptr;
     if (isAuthenticated()) {
         cartPtr = &clientCarts[loggedInClient->getEmail()];
@@ -164,9 +165,9 @@ void Controller::runClientLoggedMenu() {
                 viewCart(cart);
             break;
             case 3:
-                // TODO: mostrar histórico de encomendas
-                    std::cout << "[View orders] Not implemented yet.\n";
+                showClientOrders();
             break;
+
             case 0:
                 std::cout << "Logging out...\n";
             loggedInClient = nullptr;  // Efetua logout
@@ -305,9 +306,50 @@ void Controller::completeOrder(Cart& cart) {
         product.reduceStock(item.second);
     }
 
+    // Criar e guardar a encomenda no cliente autenticado
+    ClientOrder order(cart.getItems(), cart.getTotal());
+    loggedInClient->addOrder(order);
+
     std::cout << "Order completed successfully!\n";
-    cart.clear();
+
+    cart.clear();  // Limpa o carrinho
 }
+
+void Controller::showClientOrders() {
+    if (!isAuthenticated()) {
+        std::cout << "You must be logged in to view orders.\n";
+        return;
+    }
+
+    const std::vector<ClientOrder>& orders = loggedInClient->getOrders();
+
+    if (orders.empty()) {
+        std::cout << "\nYou have no orders yet.\n";
+        return;
+    }
+
+    std::cout << "\n=== Your Orders ===\n";
+
+    int orderNumber = 1;
+    for (const ClientOrder& order : orders) {
+        std::cout << "\n--- Order #" << orderNumber++ << " ---\n";
+        float total = 0.0f;
+
+        for (const auto& item : order.getItems()) {
+            std::cout << "Product: " << item.first.getName()
+                      << " | Quantity: " << item.second
+                      << " | Price: " << std::fixed << std::setprecision(2)
+                      << item.first.getPriceClient() << " EUR\n";
+            total += item.first.getPriceClient() * item.second;
+        }
+
+        std::cout << "Total: " << std::fixed << std::setprecision(2)
+                  << total << " EUR\n";
+        std::cout << "--------------------------\n";
+    }
+}
+
+
 
 // Função para verificar se o cliente está autenticado
 bool Controller::isAuthenticated() {
