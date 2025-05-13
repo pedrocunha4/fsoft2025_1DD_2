@@ -1,10 +1,11 @@
 #include "MockData.h"
 #include "../headers/model/Product.h"
 #include "../headers/model/Client.h"
+#include "../headers/model/Manager.h"
+
 #include <fstream>
 
 void MockData::generateData(StepUp& store) {
-
     store.getProducts().push_back(Product(1, "Nike Air Max", "Nike", 12, "Running",
         "Comfortable running shoes", 50.0f, 89.99f));
     store.getProducts().push_back(Product(2, "Adidas Ultraboost", "Adidas", 8, "Running",
@@ -26,9 +27,13 @@ void MockData::generateData(StepUp& store) {
     store.getProducts().push_back(Product(10, "Skechers Go Walk", "Skechers", 12, "Casual",
         "Walking shoes with ultimate comfort", 30.0f, 59.99f));
 
-    // Adicionar clientes (provisorio)
+    // Adicionar clientes
     store.getClients().push_back(Client("pedro@gmail.com", "1234"));
     store.getClients().push_back(Client("raul@gmail.com", "1234"));
     store.getClients().push_back(Client("ber@gmail.com", "1234"));
     store.getClients().push_back(Client("wessa@gmail.com", "1234"));
+
+
+    //Adicionar manager
+    store.setManager(Manager("admin1@stepup.com", "admin777"));
 }

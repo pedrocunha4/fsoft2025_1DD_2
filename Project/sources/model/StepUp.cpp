@@ -38,3 +38,8 @@ Product& StepUp::findProductById(int id) {
     throw std::runtime_error("Product not found.");
 }
 
+void StepUp::setManager(const Manager& manager) {
+    this->manager = manager;
+}
+
+

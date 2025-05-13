@@ -28,6 +28,8 @@ public:
     std::vector<ClientOrder>& getClientOrders();
     std::vector<SupplierOrder>& getSupplierOrders();
     Product& findProductById(int id);
+    void setManager(const Manager& manager);
+
 
 };
 

@@ -16,11 +16,11 @@ int View::askMainOption() {
 }
 
 void View::showClientMenu() {
-    std::cout << "\n--- Client Menu ---\n";
+    std::cout << "\n--- Main Menu ---\n";
     std::cout << "1. View Products\n";
     std::cout << "2. Login\n";
     std::cout << "3. Sign Up\n";
-    std::cout << "0. Back\n";
+    std::cout << "0. Exit\n";
 }
 
 int View::askClientOption() {
@@ -30,15 +30,16 @@ int View::askClientOption() {
     return option;
 }
 
-void View::showManagerMenu() {
-    std::cout << "\n--- Manager Menu ---\n";
+void View::showManagerMainMenu() {
+    std::cout << "\n--- Main Menu ---\n";
     std::cout << "1. Login\n";
-    std::cout << "0. Back\n";
+    std::cout << "0. Exit\n";
 }
 
-int View::askManagerOption() {
+int View::askManagerMainOption() {
     int option;
     std::cout << "Select an option: ";
     std::cin >> option;
     return option;
 }
+

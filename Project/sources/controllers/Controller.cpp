@@ -32,6 +32,8 @@ void Controller::run() {
     } while (option != 0);
 }
 
+
+// Client implementation
 void Controller::runClient() {
     int option;
     do {
@@ -49,7 +51,7 @@ void Controller::runClient() {
                 signUpClient();
                 break;
             case 0:
-                std::cout << "Returning to main menu...\n";
+                std::cout << "Returning...\n";
                 break;
             default:
                 std::cout << "Invalid option.\n";
@@ -106,7 +108,7 @@ void Controller::viewProductsGuest() {
                 viewCart(cart);
             break;
             case 0:
-                std::cout << "Returning...\n";
+                std::cout << "Returning to client menu  ...\n";
             break;
             default:
                 std::cout << "Invalid option.\n";
@@ -354,7 +356,155 @@ bool Controller::isAuthenticated() {
     return loggedInClient != nullptr;
 }
 
-void Controller::runManager() {
-    std::cout << "[Manager logic placeholder] To be implemented...\n";
-    // Ex: showManagerMenu(), handle login, etc.
+//Manager implementation
+
+void Controller::loginManager() {
+    std::string email, password;
+    std::cout << "\n--- Main Menu ---\n";
+    std::cout << "Email: ";
+    std::cin >> email;
+    std::cout << "Password: ";
+    std::cin >> password;
+
+    if (email == store.getManager().getEmail() && password == store.getManager().getPassword()) {
+        std::cout << "Manager login successful!\n";
+        runManagerMenu();
+    } else {
+        std::cout << "Invalid credentials. Access denied.\n";
+    }
 }
+
+void Controller::runManager() {
+    int option;
+    do {
+        View::showManagerMainMenu();
+        option = View::askManagerMainOption();
+
+        switch (option) {
+            case 1:
+                loginManager();
+            break;
+            case 0:
+                std::cout << "Returning...\n";
+            break;
+            default:
+                std::cout << "Invalid option.\n";
+        }
+    } while (option != 0);
+}
+
+void Controller::runManagerMenu() {
+    int option;
+
+    do {
+        std::cout << "\n--- Manager Menu ---\n";
+        std::cout << "1. Manage products\n";
+        std::cout << "2. Manage suppliers\n";
+        std::cout << "3. Manage clients\n";
+        std::cout << "0. Logout\n";
+        std::cout << "Option: ";
+        std::cin >> option;
+
+        switch (option) {
+            case 1:
+                manageProductsMenu();
+            break;
+            case 2:
+                manageSuppliersMenu();
+            break;
+            case 3:
+                manageClientsMenu();
+            break;
+            case 0:
+                std::cout << "Logging out...\n";
+            break;
+            default:
+                std::cout << "Invalid option. Please try again.\n";
+        }
+    } while (option != 0);
+}
+
+void Controller::manageProductsMenu() {
+    int option;
+
+    do {
+        std::cout << "\n--- Manage Products Menu ---\n";
+        std::cout << "1. Add product\n";
+        std::cout << "2. Edit product\n";
+        std::cout << "3. Delete product\n";
+        std::cout << "0. Go back\n";
+        std::cout << "Option: ";
+        std::cin >> option;
+
+        switch (option) {
+            case 1:
+                // TODO: Implement addProduct()
+                    std::cout << "Adding product...\n";
+            break;
+            case 2:
+                // TODO: Implement editProduct()
+                    std::cout << "Editing product...\n";
+            break;
+            case 3:
+                // TODO: Implement deleteProduct()
+                    std::cout << "Deleting product...\n";
+            break;
+            case 0:
+                std::cout << "Returning to Manager Menu...\n";
+            break;
+            default:
+                std::cout << "Invalid option. Try again.\n";
+        }
+    } while (option != 0);
+}
+
+void Controller::manageSuppliersMenu() {
+    int option;
+
+    do {
+        std::cout << "\n--- Manage Suppliers Menu ---\n";
+        std::cout << "1. Place order to supplier\n";
+        std::cout << "0. Go back\n";
+        std::cout << "Option: ";
+        std::cin >> option;
+
+        switch (option) {
+            case 1:
+                // TODO: Implement placeOrderToSupplier()
+                    std::cout << "Placing order to supplier...\n";
+            break;
+            case 0:
+                std::cout << "Returning to Manager Menu...\n";
+            break;
+            default:
+                std::cout << "Invalid option. Try again.\n";
+        }
+    } while (option != 0);
+}
+
+void Controller::manageClientsMenu() {
+    int option;
+
+    do {
+        std::cout << "\n--- Manage Clients Menu ---\n";
+        std::cout << "1. View client orders\n";
+        std::cout << "0. Go back\n";
+        std::cout << "Option: ";
+        std::cin >> option;
+
+        switch (option) {
+            case 1:
+                // TODO: Implement viewClientOrders()
+                    std::cout << "Displaying client orders...\n";
+            break;
+            case 0:
+                std::cout << "Returning to Manager Menu...\n";
+            break;
+            default:
+                std::cout << "Invalid option. Try again.\n";
+        }
+    } while (option != 0);
+}
+
+
+

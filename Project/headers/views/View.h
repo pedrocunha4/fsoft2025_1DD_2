@@ -9,8 +9,8 @@ public:
     static void showClientMenu();
     static int askClientOption();
 
-    static void showManagerMenu();
-    static int askManagerOption();
+    static void showManagerMainMenu();
+    static int askManagerMainOption();
 
 };
 

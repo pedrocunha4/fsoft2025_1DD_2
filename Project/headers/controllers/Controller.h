@@ -20,6 +20,8 @@ public:
     void runClient();
     void runManager();
     void runClientLoggedMenu();
+    void loginManager();
+    void runManagerMenu();  // (vai ser chamado após login)
 
     // Ações do cliente
     void loginClient();
@@ -37,6 +39,11 @@ public:
 
     // Autenticação
     bool isAuthenticated();
+
+    //Menu manager
+    void manageProductsMenu();
+    void manageSuppliersMenu();
+    void manageClientsMenu();
 };
 
 #endif // CONTROLLER_H

@@ -120,6 +120,7 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj: \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/SupplierOrder.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Product.h \
  C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Client.h \
+ C:/Users/HP/Documents/GitHub/fsoft2025_1DD_2/Project/headers/model/Manager.h \
  C:/Pedro\ facudade/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
  C:/Pedro\ facudade/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
  C:/Pedro\ facudade/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \

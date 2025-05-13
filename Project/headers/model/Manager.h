@@ -10,6 +10,10 @@ private:
 
 public:
     Manager();
+    Manager(const std::string& email, const std::string& password);
+
+    std::string getEmail() const;
+    std::string getPassword() const;
 };
 
 #endif // MANAGER_H
