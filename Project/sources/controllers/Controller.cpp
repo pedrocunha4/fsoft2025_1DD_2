@@ -349,14 +349,10 @@ void Controller::showClientOrders() {
     }
 }
 
-
-
 // Função para verificar se o cliente está autenticado
 bool Controller::isAuthenticated() {
     return loggedInClient != nullptr;
 }
-
-
 
 void Controller::runManager() {
     std::cout << "[Manager logic placeholder] To be implemented...\n";

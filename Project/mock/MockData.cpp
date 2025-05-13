@@ -28,5 +28,7 @@ void MockData::generateData(StepUp& store) {
 
     // Adicionar clientes (provisorio)
     store.getClients().push_back(Client("pedro@gmail.com", "1234"));
-    store.getClients().push_back(Client("raul@example.com", "5678"));
+    store.getClients().push_back(Client("raul@gmail.com", "1234"));
+    store.getClients().push_back(Client("ber@gmail.com", "1234"));
+    store.getClients().push_back(Client("wessa@gmail.com", "1234"));
 }
