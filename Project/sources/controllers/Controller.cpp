@@ -438,8 +438,7 @@ void Controller::manageProductsMenu() {
 
         switch (option) {
             case 1:
-                // TODO: Implement addProduct()
-                    std::cout << "Adding product...\n";
+                addProduct();
             break;
             case 2:
                 // TODO: Implement editProduct()
@@ -506,5 +505,46 @@ void Controller::manageClientsMenu() {
     } while (option != 0);
 }
 
+void Controller::addProduct() {
+    std::cin.ignore(); // Limpa o buffer de entrada
+    std::string name, brand, category, description;
+    int stock;
+    float priceSupplier, priceClient;
 
+    std::cout << "\n--- Add New Product ---\n";
+
+    std::cout << "Name: ";
+    std::getline(std::cin, name);
+
+    std::cout << "Brand: ";
+    std::getline(std::cin, brand);
+
+    std::cout << "Stock quantity: ";
+    std::cin >> stock;
+    std::cin.ignore();
+
+    std::cout << "Category: ";
+    std::getline(std::cin, category);
+
+    std::cout << "Description: ";
+    std::getline(std::cin, description);
+
+    std::cout << "Supplier price (EUR): ";
+    std::cin >> priceSupplier;
+
+    std::cout << "Selling price (EUR): ";
+    std::cin >> priceClient;
+
+    // Gerar ID automaticamente com base no Ãºltimo produto (evita repetidos)
+    int newId = 1;
+    const auto& products = store.getProducts();
+    if (!products.empty()) {
+        newId = products.back().getId() + 1;
+    }
+
+    Product newProduct(newId, name, brand, stock, category, description, priceSupplier, priceClient);
+    store.getProducts().push_back(newProduct);
+
+    std::cout << "Product added successfully!\n";
+}
 
