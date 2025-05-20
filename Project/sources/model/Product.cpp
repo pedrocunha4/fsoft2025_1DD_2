@@ -21,3 +21,11 @@ void Product::reduceStock(int quantity) {
     if (quantity <= stock)
         stock -= quantity;
 }
+
+void Product::setName(const std::string& newName) { name = newName; }
+void Product::setBrand(const std::string& newBrand) { brand = newBrand; }
+void Product::setStock(int newStock) { stock = newStock; }
+void Product::setCategory(const std::string& newCategory) { category = newCategory; }
+void Product::setDescription(const std::string& newDesc) { description = newDesc; }
+void Product::setPriceSupplier(float newPrice) { priceSupplier = newPrice; }
+void Product::setPriceClient(float newPrice) { priceClient = newPrice; }

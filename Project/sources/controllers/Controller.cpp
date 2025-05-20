@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <iomanip>
 #include <fstream>
 #include "../../headers/controllers/Controller.h"
@@ -441,12 +442,10 @@ void Controller::manageProductsMenu() {
                 addProduct();
             break;
             case 2:
-                // TODO: Implement editProduct()
-                    std::cout << "Editing product...\n";
+                editProduct();
             break;
             case 3:
-                // TODO: Implement deleteProduct()
-                    std::cout << "Deleting product...\n";
+                deleteProduct();
             break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
@@ -548,3 +547,90 @@ void Controller::addProduct() {
     std::cout << "Product added successfully!\n";
 }
 
+void Controller::editProduct() {
+    int id;
+    std::cout << "\n--- Edit Product ---\n";
+    std::cout << "Enter product ID to edit: ";
+    std::cin >> id;
+
+    // Procurar produto por ID
+    std::vector<Product>& products = store.getProducts(); // obter referÃªncia
+    for (Product& p : products) {
+        if (p.getId() == id) {
+            std::cin.ignore();
+
+            std::cout << "Current name: " << p.getName() << "\n";
+            std::cout << "New name (leave empty to keep): ";
+            std::string input;
+            std::getline(std::cin, input);
+            if (!input.empty()) p.setName(input);
+
+            std::cout << "Current brand: " << p.getBrand() << "\n";
+            std::cout << "New brand (leave empty to keep): ";
+            std::getline(std::cin, input);
+            if (!input.empty()) p.setBrand(input);
+
+            std::cout << "Current stock: " << p.getStock() << "\n";
+            std::cout << "New stock (-1 to keep): ";
+            int stockInput;
+            std::cin >> stockInput;
+            if (stockInput >= 0) p.setStock(stockInput);
+            std::cin.ignore();
+
+            std::cout << "Current category: " << p.getCategory() << "\n";
+            std::cout << "New category (leave empty to keep): ";
+            std::getline(std::cin, input);
+            if (!input.empty()) p.setCategory(input);
+
+            std::cout << "Current description: " << p.getDescription() << "\n";
+            std::cout << "New description (leave empty to keep): ";
+            std::getline(std::cin, input);
+            if (!input.empty()) p.setDescription(input);
+
+            std::cout << "Current supplier price: " << p.getPriceSupplier() << "\n";
+            std::cout << "New supplier price (-1 to keep): ";
+            float newSupplierPrice;
+            std::cin >> newSupplierPrice;
+            if (newSupplierPrice >= 0) p.setPriceSupplier(newSupplierPrice);
+
+            std::cout << "Current selling price: " << p.getPriceClient() << "\n";
+            std::cout << "New selling price (-1 to keep): ";
+            float newClientPrice;
+            std::cin >> newClientPrice;
+            if (newClientPrice >= 0) p.setPriceClient(newClientPrice);
+
+            std::cout << "Product updated successfully.\n";
+            return;
+        }
+    }
+
+    std::cout << "Product with ID " << id << " not found.\n";
+}
+void Controller::deleteProduct() {
+    int id;
+    std::cout << "\n--- Delete Product ---\n";
+    std::cout << "Enter product ID to delete: ";
+    std::cin >> id;
+
+    std::vector<Product>& products = store.getProducts(); // Referência modificável
+
+    auto it = std::find_if(products.begin(), products.end(), [id](const Product& p) {
+        return p.getId() == id;
+    });
+
+    if (it != products.end()) {
+        std::cout << "Product found: " << it->getName() << " by " << it->getBrand() << "\n";
+        std::cout << "Are you sure you want to delete it? (y/n): ";
+        char confirm;
+        std::cin >> confirm;
+
+        if (confirm == 'y' || confirm == 'Y') {
+            products.erase(it);
+            std::cout << "Product deleted successfully.\n";
+        } else {
+            std::cout << "Deletion cancelled.\n";
+        }
+    } else {
+        std::cout << "Product with ID " << id << " not found.\n";
+    }
+}

@@ -45,6 +45,8 @@ public:
     void manageSuppliersMenu();
     void manageClientsMenu();
     void addProduct();
+    void editProduct();
+    void deleteProduct();
 };
 
 #endif // CONTROLLER_H

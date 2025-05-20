@@ -29,6 +29,14 @@ public:
     float getPriceClient() const;
     float getPriceSupplier() const; // usado só pelo gerente
     void reduceStock(int quantity);
+
+    void setName(const std::string& newName);
+    void setBrand(const std::string& newBrand);
+    void setStock(int newStock);
+    void setCategory(const std::string& newCategory);
+    void setDescription(const std::string& newDesc);
+    void setPriceSupplier(float newPrice);
+    void setPriceClient(float newPrice);
 };
 
 #endif // PRODUCT_H
