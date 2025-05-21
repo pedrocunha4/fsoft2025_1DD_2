@@ -47,6 +47,7 @@ public:
     void addProduct();
     void editProduct();
     void deleteProduct();
+    void listProducts();
 };
 
 #endif // CONTROLLER_H

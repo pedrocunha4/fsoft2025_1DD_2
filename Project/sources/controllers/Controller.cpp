@@ -505,6 +505,7 @@ void Controller::manageClientsMenu() {
 }
 
 void Controller::addProduct() {
+
     std::cin.ignore(); // Limpa o buffer de entrada
     std::string name, brand, category, description;
     int stock;
@@ -545,6 +546,7 @@ void Controller::addProduct() {
     store.getProducts().push_back(newProduct);
 
     std::cout << "Product added successfully!\n";
+    listProducts();
 }
 
 void Controller::editProduct() {
@@ -600,11 +602,13 @@ void Controller::editProduct() {
             if (newClientPrice >= 0) p.setPriceClient(newClientPrice);
 
             std::cout << "Product updated successfully.\n";
+            listProducts();
             return;
         }
     }
 
     std::cout << "Product with ID " << id << " not found.\n";
+    listProducts();
 }
 void Controller::deleteProduct() {
     int id;
@@ -632,5 +636,27 @@ void Controller::deleteProduct() {
         }
     } else {
         std::cout << "Product with ID " << id << " not found.\n";
+    }
+    listProducts();
+}
+void Controller::listProducts(){
+    const auto& products = store.getProducts();
+    std::cout << "\n--- Available Products ---\n";
+
+    if (products.empty()) {
+        std::cout << "No products available.\n";
+        return;
+    }
+
+    for (const Product& p : products) {
+        std::cout << "ID: " << p.getId() << "\n";
+        std::cout << "Name: " << p.getName() << "\n";
+        std::cout << "Brand: " << p.getBrand() << "\n";
+        std::cout << "Category: " << p.getCategory() << "\n";
+        std::cout << "Description: " << p.getDescription() << "\n";
+        std::cout << "Price: " << std::fixed << std::setprecision(2)
+                  << p.getPriceClient() << " EUR\n";
+        std::cout << "Stock: " << p.getStock() << "\n";
+        std::cout << "--------------------------\n";
     }
 }
