@@ -319,8 +319,8 @@ void Controller::completeOrder(Cart& cart) {
 }
 
 void Controller::showClientOrders() {
-    if (!isAuthenticated()) {
-        std::cout << "You must be logged in to view orders.\n";
+    if (loggedInClient == nullptr) {
+        std::cout << "Erro: Nenhum cliente está autenticado.\n";
         return;
     }
 
@@ -351,6 +351,7 @@ void Controller::showClientOrders() {
         std::cout << "--------------------------\n";
     }
 }
+
 
 // Função para verificar se o cliente está autenticado
 bool Controller::isAuthenticated() {
@@ -492,8 +493,7 @@ void Controller::manageClientsMenu() {
 
         switch (option) {
             case 1:
-                // TODO: Implement viewClientOrders()
-                    std::cout << "Displaying client orders...\n";
+                showClientOrders(); // Chamada da função real
             break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
