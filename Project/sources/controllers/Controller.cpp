@@ -468,17 +468,17 @@ void Controller::manageSuppliersMenu() {
 
         switch (option) {
             case 1:
-                // TODO: Implement placeOrderToSupplier()
-                    std::cout << "Placing order to supplier...\n";
-            break;
+                placeOrderToSupplier();  // nova função já implementada
+                break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
-            break;
+                break;
             default:
                 std::cout << "Invalid option. Try again.\n";
         }
     } while (option != 0);
 }
+
 
 void Controller::manageClientsMenu() {
     int option;
@@ -659,4 +659,56 @@ void Controller::listProducts(){
         std::cout << "Stock: " << p.getStock() << "\n";
         std::cout << "--------------------------\n";
     }
+}
+
+void Controller::placeOrderToSupplier() {
+    std::cin.ignore();
+    std::string supplierName, contact, email;
+    std::cout << "\n--- Place Order to Supplier ---\n";
+    std::cout << "Supplier name: ";
+    std::getline(std::cin, supplierName);
+    std::cout << "Contact: ";
+    std::getline(std::cin, contact);
+    std::cout << "Email: ";
+    std::getline(std::cin, email);
+
+    Supplier supplier(supplierName, contact, email);
+
+    int orderNumber = store.getSupplierOrders().size() + 1;  // Geração simples de ID
+    std::string date = "2024-01-01";  // Podes substituir por Utils::getTodayDate()
+
+    SupplierOrder order(orderNumber, date, supplier);
+
+    char more = 'y';
+    while (more == 'y' || more == 'Y') {
+        int productId, quantity;
+        std::cout << "Product ID to order: ";
+        std::cin >> productId;
+        std::cout << "Quantity: ";
+        std::cin >> quantity;
+
+        Product* product = nullptr;
+        for (Product& p : store.getProducts()) {
+            if (p.getId() == productId) {
+                product = &p;
+                break;
+            }
+        }
+
+        if (product == nullptr) {
+            std::cout << "Product not found.\n";
+        } else {
+            for (int i = 0; i < quantity; ++i) {
+                order.addProduct(*product);
+                product->increaseStock(1);  // Certifica-te que tens este método
+            }
+            std::cout << "Product added to supplier order.\n";
+        }
+
+        std::cout << "Add more products? (y/n): ";
+        std::cin >> more;
+    }
+
+    store.getSupplierOrders().push_back(order);
+    std::cout << "Supplier order placed successfully!\n";
 }

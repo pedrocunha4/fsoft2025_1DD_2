@@ -48,6 +48,8 @@ public:
     void editProduct();
     void deleteProduct();
     void listProducts();
+    void placeOrderToSupplier();
+
 };
 
 #endif // CONTROLLER_H

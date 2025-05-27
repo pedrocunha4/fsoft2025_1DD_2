@@ -29,3 +29,4 @@ void Product::setCategory(const std::string& newCategory) { category = newCatego
 void Product::setDescription(const std::string& newDesc) { description = newDesc; }
 void Product::setPriceSupplier(float newPrice) { priceSupplier = newPrice; }
 void Product::setPriceClient(float newPrice) { priceClient = newPrice; }
+void Product::increaseStock(int quantity) { stock += quantity;}

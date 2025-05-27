@@ -37,6 +37,8 @@ public:
     void setDescription(const std::string& newDesc);
     void setPriceSupplier(float newPrice);
     void setPriceClient(float newPrice);
+    void increaseStock(int quantity);
+
 };
 
 #endif // PRODUCT_H
