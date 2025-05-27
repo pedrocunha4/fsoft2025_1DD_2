@@ -2,6 +2,7 @@
 #define PRODUCT_H
 
 #include <string>
+//#include "Supplier.h"
 
 class Product {
 private:
@@ -13,6 +14,7 @@ private:
     std::string description;
     float priceSupplier;
     float priceClient;
+   // Supplier supplier;
 
 public:
     Product();
