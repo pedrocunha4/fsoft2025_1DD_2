@@ -662,53 +662,57 @@ void Controller::listProducts(){
 }
 
 void Controller::placeOrderToSupplier() {
-    std::cin.ignore();
-    std::string supplierName, contact, email;
-    std::cout << "\n--- Place Order to Supplier ---\n";
-    std::cout << "Supplier name: ";
-    std::getline(std::cin, supplierName);
-    std::cout << "Contact: ";
-    std::getline(std::cin, contact);
-    std::cout << "Email: ";
-    std::getline(std::cin, email);
+    const auto& suppliers = store.getSuppliers();
+    const auto& products = store.getProducts();
 
-    Supplier supplier(supplierName, contact, email);
-
-    int orderNumber = store.getSupplierOrders().size() + 1;  // Geração simples de ID
-    std::string date = "2024-01-01";  // Podes substituir por Utils::getTodayDate()
-
-    SupplierOrder order(orderNumber, date, supplier);
-
-    char more = 'y';
-    while (more == 'y' || more == 'Y') {
-        int productId, quantity;
-        std::cout << "Product ID to order: ";
-        std::cin >> productId;
-        std::cout << "Quantity: ";
-        std::cin >> quantity;
-
-        Product* product = nullptr;
-        for (Product& p : store.getProducts()) {
-            if (p.getId() == productId) {
-                product = &p;
-                break;
-            }
-        }
-
-        if (product == nullptr) {
-            std::cout << "Product not found.\n";
-        } else {
-            for (int i = 0; i < quantity; ++i) {
-                order.addProduct(*product);
-                product->increaseStock(1);  // Certifica-te que tens este método
-            }
-            std::cout << "Product added to supplier order.\n";
-        }
-
-        std::cout << "Add more products? (y/n): ";
-        std::cin >> more;
+    if (suppliers.empty() || products.empty()) {
+        std::cout << "No suppliers or products available.\n";
+        return;
     }
 
+    std::cout << "\n--- Suppliers and Their Products ---\n";
+    for (const Supplier& s : suppliers) {
+        std::cout << "\nSupplier ID: " << s.getId()
+                  << " | Name: " << s.getName() << "\n";
+
+        for (const Product& p : products) {
+            if (p.getSupplier().getId() == s.getId()) {
+                std::cout << "   - Product ID: " << p.getId()
+                          << " | Name: " << p.getName()
+                          << " | Stock: " << p.getStock() << "\n";
+            }
+        }
+    }
+
+    int productId, quantity;
+    std::cout << "\nEnter Product ID to order: ";
+    std::cin >> productId;
+
+    Product* chosenProduct = nullptr;
+    for (Product& p : store.getProducts()) {
+        if (p.getId() == productId) {
+            chosenProduct = &p;
+            break;
+        }
+    }
+
+    if (!chosenProduct) {
+        std::cout << "Invalid Product ID.\n";
+        return;
+    }
+
+    std::cout << "Quantity to order: ";
+    std::cin >> quantity;
+
+    chosenProduct->increaseStock(quantity);
+
+    int orderId = store.getSupplierOrders().size() + 1;
+    SupplierOrder order(orderId, "2024-01-01", chosenProduct->getSupplier());
+    for (int i = 0; i < quantity; ++i)
+        order.addProduct(*chosenProduct);
+
     store.getSupplierOrders().push_back(order);
-    std::cout << "Supplier order placed successfully!\n";
+
+    std::cout << "Order placed to supplier " << chosenProduct->getSupplier().getName() << "!\n";
 }
+

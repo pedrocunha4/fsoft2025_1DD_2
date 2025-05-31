@@ -1,7 +1,11 @@
 #include "Supplier.h"
 
-Supplier::Supplier(const std::string& name, const std::string& contact, const std::string& email)
+Supplier::Supplier(int id,const std::string& name, const std::string& contact, const std::string& email)
         : name(name), contact(contact), email(email) {}
+
+int Supplier::getId() const {
+    return id;
+}
 
 std::string Supplier::getName() const {
     return name;

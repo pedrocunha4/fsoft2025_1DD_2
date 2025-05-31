@@ -5,13 +5,14 @@
 
 class Supplier {
 private:
+    int id;
     std::string name;
     std::string contact;
     std::string email;
 
 public:
-    Supplier(const std::string& name, const std::string& contact, const std::string& email);
-
+    Supplier(int id,const std::string& name, const std::string& contact, const std::string& email);
+    int getId() const;
     std::string getName() const;
     std::string getContact() const;
     std::string getEmail() const;
