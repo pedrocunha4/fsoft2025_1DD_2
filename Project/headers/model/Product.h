@@ -2,10 +2,11 @@
 #define PRODUCT_H
 
 #include <string>
+#include "Supplier.h"
 
 class Product {
 private:
-    int id;  // Novo campo para o ID
+    int id;
     std::string name;
     std::string brand;
     int stock;
@@ -13,12 +14,16 @@ private:
     std::string description;
     float priceSupplier;
     float priceClient;
+    Supplier supplier;
 
 public:
     Product();
     Product(int id, const std::string& name, const std::string& brand, int stock,
             const std::string& category, const std::string& description,
             float priceSupplier, float priceClient);
+    Product(int id, const std::string& name, const std::string& brand, int stock,
+            const std::string& category, const std::string& description,
+            float priceSupplier, float priceClient, const Supplier& supplier);
 
     int getId() const;
     std::string getName() const;
@@ -27,9 +32,11 @@ public:
     std::string getCategory() const;
     std::string getDescription() const;
     float getPriceClient() const;
-    float getPriceSupplier() const; // usado só pelo gerente
-    void reduceStock(int quantity);
+    float getPriceSupplier() const;
+    Supplier getSupplier() const;
 
+    void reduceStock(int quantity);
+    void increaseStock(int quantity);
     void setName(const std::string& newName);
     void setBrand(const std::string& newBrand);
     void setStock(int newStock);
@@ -37,8 +44,6 @@ public:
     void setDescription(const std::string& newDesc);
     void setPriceSupplier(float newPrice);
     void setPriceClient(float newPrice);
-    void increaseStock(int quantity);
-
 };
 
 #endif // PRODUCT_H
