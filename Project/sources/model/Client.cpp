@@ -1,6 +1,4 @@
-#include "../../headers/model/Client.h"
-
-Client::Client() {}
+#include "Client.h"
 
 Client::Client(const std::string& email, const std::string& password)
     : email(email), password(password) {}
@@ -13,10 +11,11 @@ std::string Client::getPassword() const {
     return password;
 }
 
+std::string Client::getName() const {
+    return name;
+}
+
 void Client::addOrder(const ClientOrder& order) {
     orders.push_back(order);
 }
 
-const std::vector<ClientOrder>& Client::getOrders() const {
-    return orders;
-}
