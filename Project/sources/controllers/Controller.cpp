@@ -430,7 +430,7 @@ void Controller::runManagerMenu() {
 
 void Controller::manageProductsMenu() {
     int option;
-
+    listProducts();
     do {
         std::cout << "\n--- Manage Products Menu ---\n";
         std::cout << "1. Add product\n";
