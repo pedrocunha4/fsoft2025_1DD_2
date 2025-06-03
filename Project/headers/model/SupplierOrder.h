@@ -20,6 +20,9 @@ public:
     std::string getDate() const;
     Supplier getSupplier() const;
     std::vector<Product> getProducts() const;
+    bool isCompleted = false;
+    void markCompleted();
+    bool getStatus() const;
 
     void addProduct(const Product& product);
 };

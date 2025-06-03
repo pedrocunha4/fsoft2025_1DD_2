@@ -8,6 +8,9 @@
 #include "../../headers/model/Cart.h"
 #include "../../headers/model/Product.h"
 #include "../../headers/model/ClientOrder.h"
+#include <thread>
+#include <chrono>
+
 
 Controller::Controller(StepUp &store) : store(store) {}
 
@@ -428,7 +431,7 @@ void Controller::runManagerMenu() {
 
 void Controller::manageProductsMenu() {
     int option;
-
+    listProducts();
     do {
         std::cout << "\n--- Manage Products Menu ---\n";
         std::cout << "1. Add product\n";
@@ -463,13 +466,21 @@ void Controller::manageSuppliersMenu() {
     do {
         std::cout << "\n--- Manage Suppliers Menu ---\n";
         std::cout << "1. Place order to supplier\n";
+        std::cout << "2. View supplier orders\n";
+        std::cout << "3. View completed supplier orders\n";
         std::cout << "0. Go back\n";
         std::cout << "Option: ";
         std::cin >> option;
 
         switch (option) {
             case 1:
-                placeOrderToSupplier();  // nova função já implementada
+                placeOrderToSupplier();
+                break;
+            case 2:
+                viewSupplierOrders();
+                break;
+            case 3:
+                viewCompletedSupplierOrders();
                 break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
@@ -639,8 +650,10 @@ void Controller::deleteProduct() {
     }
     listProducts();
 }
-void Controller::listProducts(){
+void Controller::listProducts() {
     const auto& products = store.getProducts();
+    const auto& supplierOrders = store.getSupplierOrders();
+
     std::cout << "\n--- Available Products ---\n";
 
     if (products.empty()) {
@@ -649,6 +662,18 @@ void Controller::listProducts(){
     }
 
     for (const Product& p : products) {
+        // Contar unidades pendentes para este produto em orders NÃO completadas
+        int pending = 0;
+        for (const SupplierOrder& order : supplierOrders) {
+            if (!order.getStatus()) {
+                for (const Product& op : order.getProducts()) {
+                    if (op.getId() == p.getId()) {
+                        pending++;
+                    }
+                }
+            }
+        }
+
         std::cout << "ID: " << p.getId() << "\n";
         std::cout << "Name: " << p.getName() << "\n";
         std::cout << "Brand: " << p.getBrand() << "\n";
@@ -656,59 +681,151 @@ void Controller::listProducts(){
         std::cout << "Description: " << p.getDescription() << "\n";
         std::cout << "Price: " << std::fixed << std::setprecision(2)
                   << p.getPriceClient() << " EUR\n";
-        std::cout << "Stock: " << p.getStock() << "\n";
-        std::cout << "--------------------------\n";
+        std::cout << "Stock: " << p.getStock();
+        if (pending > 0) {
+            std::cout << " (pending: " << pending << ")";
+        }
+        std::cout << "\n--------------------------\n";
     }
 }
 
 void Controller::placeOrderToSupplier() {
-    std::cin.ignore();
-    std::string supplierName, contact, email;
-    std::cout << "\n--- Place Order to Supplier ---\n";
-    std::cout << "Supplier name: ";
-    std::getline(std::cin, supplierName);
-    std::cout << "Contact: ";
-    std::getline(std::cin, contact);
-    std::cout << "Email: ";
-    std::getline(std::cin, email);
+    const auto& suppliers = store.getSuppliers();
+    const auto& products = store.getProducts();
 
-    Supplier supplier(supplierName, contact, email);
-
-    int orderNumber = store.getSupplierOrders().size() + 1;  // Geração simples de ID
-    std::string date = "2024-01-01";  // Podes substituir por Utils::getTodayDate()
-
-    SupplierOrder order(orderNumber, date, supplier);
-
-    char more = 'y';
-    while (more == 'y' || more == 'Y') {
-        int productId, quantity;
-        std::cout << "Product ID to order: ";
-        std::cin >> productId;
-        std::cout << "Quantity: ";
-        std::cin >> quantity;
-
-        Product* product = nullptr;
-        for (Product& p : store.getProducts()) {
-            if (p.getId() == productId) {
-                product = &p;
-                break;
-            }
-        }
-
-        if (product == nullptr) {
-            std::cout << "Product not found.\n";
-        } else {
-            for (int i = 0; i < quantity; ++i) {
-                order.addProduct(*product);
-                product->increaseStock(1);  // Certifica-te que tens este método
-            }
-            std::cout << "Product added to supplier order.\n";
-        }
-
-        std::cout << "Add more products? (y/n): ";
-        std::cin >> more;
+    if (suppliers.empty() || products.empty()) {
+        std::cout << "No suppliers or products available.\n";
+        return;
     }
 
+    std::cout << "\n--- Suppliers and Their Products ---\n";
+    for (const Supplier& s : suppliers) {
+        std::cout << "\nSupplier ID: " << s.getId()
+                  << " | Name: " << s.getName() << "\n";
+
+        for (const Product& p : products) {
+            if (p.getSupplier().getId() == s.getId()) {
+                std::cout << "   - Product ID: " << p.getId()
+                          << " | Name: " << p.getName()
+                          << " | Stock: " << p.getStock() << "\n";
+            }
+        }
+    }
+
+    int productId, quantity;
+    std::cout << "\nEnter Product ID to order: ";
+    std::cin >> productId;
+
+    Product* chosenProduct = nullptr;
+    for (Product& p : store.getProducts()) {
+        if (p.getId() == productId) {
+            chosenProduct = &p;
+            break;
+        }
+    }
+
+    if (!chosenProduct) {
+        std::cout << "Invalid Product ID.\n";
+        return;
+    }
+
+    std::cout << "Quantity to order: ";
+    std::cin >> quantity;
+
+    //chosenProduct->increaseStock(quantity);
+
+    int orderId = store.getSupplierOrders().size() + 1;
+    SupplierOrder order(orderId, "2024-01-01", chosenProduct->getSupplier());
+    for (int i = 0; i < quantity; ++i)
+        order.addProduct(*chosenProduct);
+
     store.getSupplierOrders().push_back(order);
-    std::cout << "Supplier order placed successfully!\n";
+
+    std::cout << "Order placed to supplier " << chosenProduct->getSupplier().getName() << "!\n";
 }
+
+void Controller::viewSupplierOrders() {
+    auto& orders = store.getSupplierOrders();
+
+    if (orders.empty()) {
+        std::cout << "\nNo supplier orders found.\n";
+        return;
+    }
+
+    std::cout << "\n--- Supplier Orders ---\n";
+    for (const SupplierOrder& order : orders) {
+        if (!order.getStatus()) { // apenas mostrar pendentes
+            std::cout << "Order #" << order.getOrderNumber()
+                      << " | Supplier: " << order.getSupplier().getName() << "\n";
+            for (const Product& p : order.getProducts()) {
+                std::cout << "  - " << p.getName() << "\n";
+            }
+        }
+    }
+
+    char option;
+    std::cout << "\nDo you want to cancel an order? (y/n): ";
+    std::cin >> option;
+
+    if (option == 'y' || option == 'Y') {
+        int cancelId;
+        std::cout << "Enter Order ID to cancel: ";
+        std::cin >> cancelId;
+
+        auto& ordersRef = store.getSupplierOrders();
+        auto it = std::find_if(ordersRef.begin(), ordersRef.end(),
+                               [cancelId](const SupplierOrder& order) {
+                                   return order.getOrderNumber() == cancelId;
+                               });
+
+        if (it != ordersRef.end()) {
+            ordersRef.erase(it);
+            std::cout << "Order #" << cancelId << " was cancelled.\n";
+        } else {
+            std::cout << "Order not found.\n";
+        }
+
+    } else {
+        std::cout << "No cancellation requested. Completing pending orders in 3 seconds...\n";
+        std::this_thread::sleep_for(std::chrono::seconds(3));
+
+        for (auto& order : store.getSupplierOrders()) {
+            if (!order.getStatus()) {
+                order.markCompleted();
+
+                // Adicionar stock
+                for (const Product& p : order.getProducts()) {
+                    try {
+                        Product& stored = store.findProductById(p.getId());
+                        stored.increaseStock(1);  // ← assumes 1 unidade por produto
+                    } catch (...) {}
+                }
+            }
+        }
+
+        std::cout << "All pending orders are now marked as completed.\n";
+    }
+}
+
+
+void Controller::viewCompletedSupplierOrders() {
+    const auto& orders = store.getSupplierOrders();
+    bool found = false;
+
+    for (const SupplierOrder& order : orders) {
+        if (order.getStatus()) {
+            found = true;
+            std::cout << "Order #" << order.getOrderNumber()
+                      << " | Supplier: " << order.getSupplier().getName() << "\n";
+            for (const Product& p : order.getProducts()) {
+                std::cout << "  - " << p.getName() << "\n";
+            }
+        }
+    }
+
+    if (!found)
+        std::cout << "\nNo completed supplier orders found.\n";
+}
+
+
+

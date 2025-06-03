@@ -655,7 +655,8 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj: C:/Users/CM
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Client.h \
   C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/ClientOrder.h \
-  C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Product.h
+  C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Product.h \
+  C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Supplier.h
 
 CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj: C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/sources/model/ClientOrder.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
@@ -826,7 +827,8 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj: C:/Use
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/ClientOrder.h \
-  C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Product.h
+  C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Product.h \
+  C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Supplier.h
 
 CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj: C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/sources/model/Manager.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
@@ -1042,7 +1044,8 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj: C:/Users/C
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Product.h
+  C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Product.h \
+  C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/headers/model/Supplier.h
 
 CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj: C:/Users/CMGM/Desktop/Github/fsoft2025_1DD_2/Project/sources/model/StepUp.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
