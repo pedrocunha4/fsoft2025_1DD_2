@@ -16,30 +16,13 @@ void Cart::addProduct(const Product& product, int quantity) {
 void Cart::removeProductById(int productId) {
     for (auto it = items.begin(); it != items.end(); ++it) {
         if (it->first.getId() == productId) {
-            int currentQty = it->second;
-            std::cout << "Product found in cart with " << currentQty << " unit(s).\n";
-            std::cout << "How many units do you want to remove? ";
-            int toRemove;
-            std::cin >> toRemove;
-
-            if (toRemove <= 0) {
-                std::cout << "Invalid quantity.\n";
-                return;
-            }
-
-            if (toRemove >= currentQty) {
-                items.erase(it);
-                std::cout << "Product completely removed from the cart.\n";
-            } else {
-                it->second -= toRemove;
-                std::cout << toRemove << " unit(s) removed. Remaining quantity: " << it->second << "\n";
-            }
+            items.erase(it);
+            std::cout << "Product removed from cart.\n";
             return;
         }
     }
-    std::cout << "Product with the given ID not found in the cart.\n";
+    std::cout << "Product with the given ID not found in cart.\n";
 }
-
 
 void Cart::showCart() const {
     if (items.empty()) {

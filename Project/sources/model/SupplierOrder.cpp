@@ -23,10 +23,3 @@ std::vector<Product> SupplierOrder::getProducts() const {
 void SupplierOrder::addProduct(const Product& product) {
     products.push_back(product);
 }
-void SupplierOrder::markCompleted() {
-    isCompleted = true;
-}
-
-bool SupplierOrder::getStatus() const {
-    return isCompleted;
-}
