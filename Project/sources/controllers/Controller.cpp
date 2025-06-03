@@ -639,8 +639,10 @@ void Controller::deleteProduct() {
     }
     listProducts();
 }
-void Controller::listProducts(){
+void Controller::listProducts() {
     const auto& products = store.getProducts();
+    const auto& supplierOrders = store.getSupplierOrders();
+
     std::cout << "\n--- Available Products ---\n";
 
     if (products.empty()) {
@@ -649,6 +651,18 @@ void Controller::listProducts(){
     }
 
     for (const Product& p : products) {
+        // Contar unidades pendentes para este produto em orders NÃO completadas
+        int pending = 0;
+        for (const SupplierOrder& order : supplierOrders) {
+            if (!order.getStatus()) {
+                for (const Product& op : order.getProducts()) {
+                    if (op.getId() == p.getId()) {
+                        pending++;
+                    }
+                }
+            }
+        }
+
         std::cout << "ID: " << p.getId() << "\n";
         std::cout << "Name: " << p.getName() << "\n";
         std::cout << "Brand: " << p.getBrand() << "\n";
@@ -656,8 +670,11 @@ void Controller::listProducts(){
         std::cout << "Description: " << p.getDescription() << "\n";
         std::cout << "Price: " << std::fixed << std::setprecision(2)
                   << p.getPriceClient() << " EUR\n";
-        std::cout << "Stock: " << p.getStock() << "\n";
-        std::cout << "--------------------------\n";
+        std::cout << "Stock: " << p.getStock();
+        if (pending > 0) {
+            std::cout << " (pending: " << pending << ")";
+        }
+        std::cout << "\n--------------------------\n";
     }
 }
 
