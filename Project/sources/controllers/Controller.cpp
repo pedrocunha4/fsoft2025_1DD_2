@@ -8,6 +8,9 @@
 #include "../../headers/model/Cart.h"
 #include "../../headers/model/Product.h"
 #include "../../headers/model/ClientOrder.h"
+#include <thread>
+#include <chrono>
+
 
 Controller::Controller(StepUp &store) : store(store) {}
 
@@ -462,13 +465,21 @@ void Controller::manageSuppliersMenu() {
     do {
         std::cout << "\n--- Manage Suppliers Menu ---\n";
         std::cout << "1. Place order to supplier\n";
+        std::cout << "2. View supplier orders\n";
+        std::cout << "3. View completed supplier orders\n";
         std::cout << "0. Go back\n";
         std::cout << "Option: ";
         std::cin >> option;
 
         switch (option) {
             case 1:
-                placeOrderToSupplier();  // nova função já implementada
+                placeOrderToSupplier();
+                break;
+            case 2:
+                viewSupplierOrders();
+                break;
+            case 3:
+                viewCompletedSupplierOrders();
                 break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
@@ -715,4 +726,86 @@ void Controller::placeOrderToSupplier() {
 
     std::cout << "Order placed to supplier " << chosenProduct->getSupplier().getName() << "!\n";
 }
+
+void Controller::viewSupplierOrders() {
+    auto& orders = store.getSupplierOrders();
+
+    if (orders.empty()) {
+        std::cout << "\nNo supplier orders found.\n";
+        return;
+    }
+
+    std::cout << "\n--- Supplier Orders ---\n";
+    for (const SupplierOrder& order : orders) {
+        std::cout << "Order #" << order.getOrderNumber()
+                  << " | Supplier: " << order.getSupplier().getName() << "\n";
+        for (const Product& p : order.getProducts()) {
+            std::cout << "  - " << p.getName() << "\n";
+        }
+    }
+
+    char option;
+    std::cout << "\nDo you want to cancel an order? (y/n): ";
+    std::cin >> option;
+
+    if (option == 'y' || option == 'Y') {
+        int cancelId;
+        std::cout << "Enter Order ID to cancel: ";
+        std::cin >> cancelId;
+
+        auto& ordersRef = store.getSupplierOrders();
+        auto it = std::find_if(ordersRef.begin(), ordersRef.end(),
+                               [cancelId](const SupplierOrder& order) {
+                                   return order.getOrderNumber() == cancelId;
+                               });
+
+        if (it != ordersRef.end()) {
+            // Repõe stock dos produtos
+            for (const Product& p : it->getProducts()) {
+                try {
+                    Product& stored = store.findProductById(p.getId());
+                    stored.increaseStock(1);  // ou p.getQuantidade() se tiveres
+                } catch (...) {}
+            }
+
+            ordersRef.erase(it);
+            std::cout << "Order #" << cancelId << " was cancelled.\n";
+        } else {
+            std::cout << "Order not found.\n";
+        }
+    } else {
+        std::cout << "No cancellation requested. Completing orders...\n";
+        std::this_thread::sleep_for(std::chrono::seconds(10));
+
+        for (auto& order : store.getSupplierOrders()) {
+            if (!order.getStatus()) {
+                order.markCompleted();
+            }
+        }
+
+        std::cout << "All pending orders have been marked as completed.\n";
+    }
+}
+
+
+void Controller::viewCompletedSupplierOrders() {
+    const auto& orders = store.getSupplierOrders();
+    bool found = false;
+
+    for (const SupplierOrder& order : orders) {
+        if (order.getStatus()) {
+            found = true;
+            std::cout << "Order #" << order.getOrderNumber()
+                      << " | Supplier: " << order.getSupplier().getName() << "\n";
+            for (const Product& p : order.getProducts()) {
+                std::cout << "  - " << p.getName() << "\n";
+            }
+        }
+    }
+
+    if (!found)
+        std::cout << "\nNo completed supplier orders found.\n";
+}
+
+
 
