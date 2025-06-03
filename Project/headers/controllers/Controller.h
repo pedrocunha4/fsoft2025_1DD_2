@@ -50,8 +50,8 @@ public:
     void listProducts();
     void placeOrderToSupplier();
     void deleteClientByEmail();
-
-
+    void viewCompletedSupplierOrders();
+    void viewSupplierOrders();
 
 };
 

@@ -18,4 +18,8 @@ std::string Client::getName() const {
 void Client::addOrder(const ClientOrder& order) {
     orders.push_back(order);
 }
+const std::vector<ClientOrder>& Client::getOrders() const {
+    return orders;
+}
+
 
