@@ -732,7 +732,7 @@ void Controller::placeOrderToSupplier() {
     std::cout << "Quantity to order: ";
     std::cin >> quantity;
 
-    chosenProduct->increaseStock(quantity);
+    //chosenProduct->increaseStock(quantity);
 
     int orderId = store.getSupplierOrders().size() + 1;
     SupplierOrder order(orderId, "2024-01-01", chosenProduct->getSupplier());
@@ -754,10 +754,12 @@ void Controller::viewSupplierOrders() {
 
     std::cout << "\n--- Supplier Orders ---\n";
     for (const SupplierOrder& order : orders) {
-        std::cout << "Order #" << order.getOrderNumber()
-                  << " | Supplier: " << order.getSupplier().getName() << "\n";
-        for (const Product& p : order.getProducts()) {
-            std::cout << "  - " << p.getName() << "\n";
+        if (!order.getStatus()) { // apenas mostrar pendentes
+            std::cout << "Order #" << order.getOrderNumber()
+                      << " | Supplier: " << order.getSupplier().getName() << "\n";
+            for (const Product& p : order.getProducts()) {
+                std::cout << "  - " << p.getName() << "\n";
+            }
         }
     }
 
@@ -777,30 +779,31 @@ void Controller::viewSupplierOrders() {
                                });
 
         if (it != ordersRef.end()) {
-            // Repõe stock dos produtos
-            for (const Product& p : it->getProducts()) {
-                try {
-                    Product& stored = store.findProductById(p.getId());
-                    stored.increaseStock(1);  // ou p.getQuantidade() se tiveres
-                } catch (...) {}
-            }
-
             ordersRef.erase(it);
             std::cout << "Order #" << cancelId << " was cancelled.\n";
         } else {
             std::cout << "Order not found.\n";
         }
+
     } else {
-        std::cout << "No cancellation requested. Completing orders...\n";
-        std::this_thread::sleep_for(std::chrono::seconds(10));
+        std::cout << "No cancellation requested. Completing pending orders in 3 seconds...\n";
+        std::this_thread::sleep_for(std::chrono::seconds(3));
 
         for (auto& order : store.getSupplierOrders()) {
             if (!order.getStatus()) {
                 order.markCompleted();
+
+                // Adicionar stock
+                for (const Product& p : order.getProducts()) {
+                    try {
+                        Product& stored = store.findProductById(p.getId());
+                        stored.increaseStock(1);  // ← assumes 1 unidade por produto
+                    } catch (...) {}
+                }
             }
         }
 
-        std::cout << "All pending orders have been marked as completed.\n";
+        std::cout << "All pending orders are now marked as completed.\n";
     }
 }
 
