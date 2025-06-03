@@ -52,6 +52,7 @@ public:
     void deleteClientByEmail();
     void viewCompletedSupplierOrders();
     void viewSupplierOrders();
+    void viewAllClientsOrders();
 
 };
 

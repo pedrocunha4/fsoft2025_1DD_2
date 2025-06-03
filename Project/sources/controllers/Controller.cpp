@@ -276,6 +276,7 @@ void Controller::viewCart(Cart& cart) {
             break;
             case 0:
                 std::cout << "Returning to products menu...\n";
+            listProducts();
             break;
             default:
                 std::cout << "Invalid option. Please try again.\n";
@@ -485,19 +486,23 @@ void Controller::manageClientsMenu() {
 
     do {
         std::cout << "\n--- Manage Clients Menu ---\n";
-        std::cout << "1. View client orders\n";
+        std::cout << "1. View all client orders\n";
         std::cout << "2. Delete client\n";
+        std::cout << "3. Complete client order\n";
         std::cout << "0. Go back\n";
         std::cout << "Option: ";
         std::cin >> option;
 
         switch (option) {
             case 1:
-                // TODO: Implement viewClientOrders()
-                    std::cout << "Displaying client orders...\n";
+                viewAllClientsOrders();
+            break;
             case 2:
                 deleteClientByEmail();
-
+            break;
+            case 3:
+                completeClientOrder();
+            break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
             break;
@@ -748,7 +753,7 @@ void Controller::deleteClientByEmail() {
             const auto& orders = it->getOrders();
             for (const auto& order : orders) {
                 if (!order.isDelivered()) {
-                    std::cout << "Cannot delete client: they have pending orders.\n";
+                    std::cout << "Cannot delete client: He/Her have pending orders.\n";
                     return;
                 }
             }
@@ -833,7 +838,6 @@ void Controller::viewSupplierOrders() {
     }
 }
 
-
 void Controller::viewCompletedSupplierOrders() {
     const auto& orders = store.getSupplierOrders();
     bool found = false;
@@ -852,6 +856,35 @@ void Controller::viewCompletedSupplierOrders() {
     if (!found)
         std::cout << "\nNo completed supplier orders found.\n";
 }
+
+void Controller::viewAllClientsOrders() {
+    const auto& clients = store.getClients();
+
+    if (clients.empty()) {
+        std::cout << "No registered clients.\n";
+        return;
+    }
+
+    for (const Client& c : clients) {
+        std::cout << "\n=============================\n";
+        std::cout << "Client: " << c.getEmail() << "\n";
+
+        const auto& orders = c.getOrders();
+        if (orders.empty()) {
+            std::cout << "No orders.\n";
+            continue;
+        }
+
+        int count = 1;
+        for (const ClientOrder& order : orders) {
+            std::cout << "\n--- Order #" << count++ << " ---\n";
+            order.show();  // já imprime produtos, total e status
+        }
+    }
+
+    std::cout << "\n=============================\n";
+}
+
 
 
 
