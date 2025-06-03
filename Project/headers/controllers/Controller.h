@@ -49,6 +49,8 @@ public:
     void deleteProduct();
     void listProducts();
     void placeOrderToSupplier();
+    void deleteClientByEmail();
+
 
 };
 

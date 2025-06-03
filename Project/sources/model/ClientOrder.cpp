@@ -2,8 +2,8 @@
 #include <iostream>
 #include <iomanip>
 
-ClientOrder::ClientOrder(const std::vector<std::pair<Product, int>>& items, float total)
-    : items(items), total(total) {}
+ClientOrder::ClientOrder(const std::vector<std::pair<Product, int>>& items, float total, bool delivered)
+    : items(items), total(total), delivered(delivered) {}
 
 void ClientOrder::show() const {
     std::cout << "\n--- Order ---\n";
@@ -15,6 +15,7 @@ void ClientOrder::show() const {
     }
     std::cout << "Total: " << std::fixed << std::setprecision(2)
               << total << " EUR\n";
+    std::cout << "Status: " << (delivered ? "Delivered" : "Pending") << "\n";
     std::cout << "-----------------------------\n";
 }
 
@@ -24,4 +25,12 @@ float ClientOrder::getTotal() const {
 
 const std::vector<std::pair<Product, int>>& ClientOrder::getItems() const {
     return items;
+}
+
+bool ClientOrder::isDelivered() const {
+    return delivered;
+}
+
+void ClientOrder::setDelivered(bool value) {
+    delivered = value;
 }

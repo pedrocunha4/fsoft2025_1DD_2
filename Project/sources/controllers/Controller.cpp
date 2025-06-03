@@ -336,19 +336,7 @@ void Controller::showClientOrders() {
     int orderNumber = 1;
     for (const ClientOrder& order : orders) {
         std::cout << "\n--- Order #" << orderNumber++ << " ---\n";
-        float total = 0.0f;
-
-        for (const auto& item : order.getItems()) {
-            std::cout << "Product: " << item.first.getName()
-                      << " | Quantity: " << item.second
-                      << " | Price: " << std::fixed << std::setprecision(2)
-                      << item.first.getPriceClient() << " EUR\n";
-            total += item.first.getPriceClient() * item.second;
-        }
-
-        std::cout << "Total: " << std::fixed << std::setprecision(2)
-                  << total << " EUR\n";
-        std::cout << "--------------------------\n";
+        order.show();
     }
 }
 
@@ -486,6 +474,7 @@ void Controller::manageClientsMenu() {
     do {
         std::cout << "\n--- Manage Clients Menu ---\n";
         std::cout << "1. View client orders\n";
+        std::cout << "2. Delete client\n";
         std::cout << "0. Go back\n";
         std::cout << "Option: ";
         std::cin >> option;
@@ -494,6 +483,8 @@ void Controller::manageClientsMenu() {
             case 1:
                 // TODO: Implement viewClientOrders()
                     std::cout << "Displaying client orders...\n";
+            case 2:
+                deleteClientByEmail();
             break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
@@ -715,4 +706,38 @@ void Controller::placeOrderToSupplier() {
 
     std::cout << "Order placed to supplier " << chosenProduct->getSupplier().getName() << "!\n";
 }
+// Função eliminar um cliente por email
 
+void Controller::deleteClientByEmail() {
+    std::string email;
+    std::cout << "Enter the email of the client to delete: ";
+    std::cin >> email;
+
+    std::vector<Client>& clients = store.getClients();  // referência para permitir modificar
+
+    for (auto it = clients.begin(); it != clients.end(); ++it) {
+        if (it->getEmail() == email) {
+            const auto& orders = it->getOrders();
+            for (const auto& order : orders) {
+                if (!order.isDelivered()) {
+                    std::cout << "Cannot delete client: they have pending orders.\n";
+                    return;
+                }
+            }
+
+            std::cout << "Are you sure you want to delete this client? (y/n): ";
+            char confirm;
+            std::cin >> confirm;
+
+            if (confirm == 'y' || confirm == 'Y') {
+                clients.erase(it);
+                std::cout << "Client deleted successfully.\n";
+            } else {
+                std::cout << "Deletion cancelled.\n";
+            }
+            return;
+        }
+    }
+
+    std::cout << "Client with email \"" << email << "\" not found.\n";
+}
