@@ -501,7 +501,7 @@ void Controller::manageClientsMenu() {
                 deleteClientByEmail();
             break;
             case 3:
-                // completeClientOrder(); NOT IMPLEMENTED
+                completeClientOrder();
             break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
