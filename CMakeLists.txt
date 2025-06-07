@@ -53,10 +53,14 @@ include_directories(ProjectTester/googleTestLib/googletest/googletest/include)
 add_executable(run_tests
         ProjectTester/main.cpp
         ProjectTester/ProductTest.cpp
-        ProjectTester/CartTest.cpp        
+        ProjectTester/CartTest.cpp
+        ProjectTester/ClientTest.cpp
+        ProjectTester/ClientOrderTest.cpp
         Project/sources/model/Product.cpp
         Project/sources/model/Supplier.cpp
         Project/sources/model/Cart.cpp
+        Project/sources/model/Client.cpp
+        Project/sources/model/ClientOrder.cpp
 )
 
 

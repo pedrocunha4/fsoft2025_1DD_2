@@ -319,6 +319,7 @@ Project/sources/model/Client.obj: Project/sources/model/Client.cpp.obj
 # target to build an object file
 Project/sources/model/Client.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj
 .PHONY : Project/sources/model/Client.cpp.obj
 
 Project/sources/model/Client.i: Project/sources/model/Client.cpp.i
@@ -327,6 +328,7 @@ Project/sources/model/Client.i: Project/sources/model/Client.cpp.i
 # target to preprocess a source file
 Project/sources/model/Client.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.i
 .PHONY : Project/sources/model/Client.cpp.i
 
 Project/sources/model/Client.s: Project/sources/model/Client.cpp.s
@@ -335,6 +337,7 @@ Project/sources/model/Client.s: Project/sources/model/Client.cpp.s
 # target to generate assembly for a file
 Project/sources/model/Client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.s
 .PHONY : Project/sources/model/Client.cpp.s
 
 Project/sources/model/ClientOrder.obj: Project/sources/model/ClientOrder.cpp.obj
@@ -343,6 +346,7 @@ Project/sources/model/ClientOrder.obj: Project/sources/model/ClientOrder.cpp.obj
 # target to build an object file
 Project/sources/model/ClientOrder.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj
 .PHONY : Project/sources/model/ClientOrder.cpp.obj
 
 Project/sources/model/ClientOrder.i: Project/sources/model/ClientOrder.cpp.i
@@ -351,6 +355,7 @@ Project/sources/model/ClientOrder.i: Project/sources/model/ClientOrder.cpp.i
 # target to preprocess a source file
 Project/sources/model/ClientOrder.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.i
 .PHONY : Project/sources/model/ClientOrder.cpp.i
 
 Project/sources/model/ClientOrder.s: Project/sources/model/ClientOrder.cpp.s
@@ -359,6 +364,7 @@ Project/sources/model/ClientOrder.s: Project/sources/model/ClientOrder.cpp.s
 # target to generate assembly for a file
 Project/sources/model/ClientOrder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/ClientOrder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.s
 .PHONY : Project/sources/model/ClientOrder.cpp.s
 
 Project/sources/model/Manager.obj: Project/sources/model/Manager.cpp.obj
@@ -559,6 +565,54 @@ ProjectTester/CartTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/CartTest.cpp.s
 .PHONY : ProjectTester/CartTest.cpp.s
 
+ProjectTester/ClientOrderTest.obj: ProjectTester/ClientOrderTest.cpp.obj
+.PHONY : ProjectTester/ClientOrderTest.obj
+
+# target to build an object file
+ProjectTester/ClientOrderTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ClientOrderTest.cpp.obj
+.PHONY : ProjectTester/ClientOrderTest.cpp.obj
+
+ProjectTester/ClientOrderTest.i: ProjectTester/ClientOrderTest.cpp.i
+.PHONY : ProjectTester/ClientOrderTest.i
+
+# target to preprocess a source file
+ProjectTester/ClientOrderTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ClientOrderTest.cpp.i
+.PHONY : ProjectTester/ClientOrderTest.cpp.i
+
+ProjectTester/ClientOrderTest.s: ProjectTester/ClientOrderTest.cpp.s
+.PHONY : ProjectTester/ClientOrderTest.s
+
+# target to generate assembly for a file
+ProjectTester/ClientOrderTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ClientOrderTest.cpp.s
+.PHONY : ProjectTester/ClientOrderTest.cpp.s
+
+ProjectTester/ClientTest.obj: ProjectTester/ClientTest.cpp.obj
+.PHONY : ProjectTester/ClientTest.obj
+
+# target to build an object file
+ProjectTester/ClientTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ClientTest.cpp.obj
+.PHONY : ProjectTester/ClientTest.cpp.obj
+
+ProjectTester/ClientTest.i: ProjectTester/ClientTest.cpp.i
+.PHONY : ProjectTester/ClientTest.i
+
+# target to preprocess a source file
+ProjectTester/ClientTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ClientTest.cpp.i
+.PHONY : ProjectTester/ClientTest.cpp.i
+
+ProjectTester/ClientTest.s: ProjectTester/ClientTest.cpp.s
+.PHONY : ProjectTester/ClientTest.s
+
+# target to generate assembly for a file
+ProjectTester/ClientTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ClientTest.cpp.s
+.PHONY : ProjectTester/ClientTest.cpp.s
+
 ProjectTester/ProductTest.obj: ProjectTester/ProductTest.cpp.obj
 .PHONY : ProjectTester/ProductTest.obj
 
@@ -688,6 +742,12 @@ help:
 	@echo ... ProjectTester/CartTest.obj
 	@echo ... ProjectTester/CartTest.i
 	@echo ... ProjectTester/CartTest.s
+	@echo ... ProjectTester/ClientOrderTest.obj
+	@echo ... ProjectTester/ClientOrderTest.i
+	@echo ... ProjectTester/ClientOrderTest.s
+	@echo ... ProjectTester/ClientTest.obj
+	@echo ... ProjectTester/ClientTest.i
+	@echo ... ProjectTester/ClientTest.s
 	@echo ... ProjectTester/ProductTest.obj
 	@echo ... ProjectTester/ProductTest.i
 	@echo ... ProjectTester/ProductTest.s
