@@ -63,15 +63,70 @@ CMAKE_BINARY_DIR = C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-buil
 
 # The main recursive "all" target.
 all: CMakeFiles/fsoft2025_1DD_2.dir/all
+all: CMakeFiles/run_tests.dir/all
+all: ProjectTester/googleTestLib/googletest/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: ProjectTester/googleTestLib/googletest/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/fsoft2025_1DD_2.dir/clean
+clean: CMakeFiles/run_tests.dir/clean
+clean: ProjectTester/googleTestLib/googletest/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory ProjectTester/googleTestLib/googletest
+
+# Recursive "all" directory target.
+ProjectTester/googleTestLib/googletest/all: ProjectTester/googleTestLib/googletest/googlemock/all
+.PHONY : ProjectTester/googleTestLib/googletest/all
+
+# Recursive "preinstall" directory target.
+ProjectTester/googleTestLib/googletest/preinstall: ProjectTester/googleTestLib/googletest/googlemock/preinstall
+.PHONY : ProjectTester/googleTestLib/googletest/preinstall
+
+# Recursive "clean" directory target.
+ProjectTester/googleTestLib/googletest/clean: ProjectTester/googleTestLib/googletest/googlemock/clean
+.PHONY : ProjectTester/googleTestLib/googletest/clean
+
+#=============================================================================
+# Directory level rules for directory ProjectTester/googleTestLib/googletest/googlemock
+
+# Recursive "all" directory target.
+ProjectTester/googleTestLib/googletest/googlemock/all: ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/all
+ProjectTester/googleTestLib/googletest/googlemock/all: ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+ProjectTester/googleTestLib/googletest/googlemock/all: ProjectTester/googleTestLib/googletest/googletest/all
+.PHONY : ProjectTester/googleTestLib/googletest/googlemock/all
+
+# Recursive "preinstall" directory target.
+ProjectTester/googleTestLib/googletest/googlemock/preinstall: ProjectTester/googleTestLib/googletest/googletest/preinstall
+.PHONY : ProjectTester/googleTestLib/googletest/googlemock/preinstall
+
+# Recursive "clean" directory target.
+ProjectTester/googleTestLib/googletest/googlemock/clean: ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/clean
+ProjectTester/googleTestLib/googletest/googlemock/clean: ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+ProjectTester/googleTestLib/googletest/googlemock/clean: ProjectTester/googleTestLib/googletest/googletest/clean
+.PHONY : ProjectTester/googleTestLib/googletest/googlemock/clean
+
+#=============================================================================
+# Directory level rules for directory ProjectTester/googleTestLib/googletest/googletest
+
+# Recursive "all" directory target.
+ProjectTester/googleTestLib/googletest/googletest/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
+ProjectTester/googleTestLib/googletest/googletest/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+.PHONY : ProjectTester/googleTestLib/googletest/googletest/all
+
+# Recursive "preinstall" directory target.
+ProjectTester/googleTestLib/googletest/googletest/preinstall:
+.PHONY : ProjectTester/googleTestLib/googletest/googletest/preinstall
+
+# Recursive "clean" directory target.
+ProjectTester/googleTestLib/googletest/googletest/clean: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/clean
+ProjectTester/googleTestLib/googletest/googletest/clean: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : ProjectTester/googleTestLib/googletest/googletest/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/fsoft2025_1DD_2.dir
@@ -98,6 +153,138 @@ fsoft2025_1DD_2: CMakeFiles/fsoft2025_1DD_2.dir/rule
 CMakeFiles/fsoft2025_1DD_2.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/clean
 .PHONY : CMakeFiles/fsoft2025_1DD_2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/run_tests.dir
+
+# All Build rule for target.
+CMakeFiles/run_tests.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/run_tests.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=23,24,25,26,27,28,29 "Built target run_tests"
+.PHONY : CMakeFiles/run_tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/run_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/run_tests.dir/rule
+
+# Convenience name for target.
+run_tests: CMakeFiles/run_tests.dir/rule
+.PHONY : run_tests
+
+# clean rule for target.
+CMakeFiles/run_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/clean
+.PHONY : CMakeFiles/run_tests.dir/clean
+
+#=============================================================================
+# Target rules for target ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target gmock"
+.PHONY : ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/all
+
+# Build rule for subdir invocation for target.
+ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 0
+.PHONY : ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/rule
+.PHONY : gmock
+
+# clean rule for target.
+ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/clean
+
+#=============================================================================
+# Target rules for target ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/all
+ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target gmock_main"
+.PHONY : ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Build rule for subdir invocation for target.
+ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 0
+.PHONY : ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/rule
+.PHONY : gmock_main
+
+# clean rule for target.
+ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+#=============================================================================
+# Target rules for target ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all:
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/depend
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target gtest"
+.PHONY : ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 0
+.PHONY : ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : gtest
+
+# clean rule for target.
+ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/clean
+.PHONY : ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Target rules for target ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest_main.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest_main.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target gtest_main"
+.PHONY : ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 0
+.PHONY : ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : gtest_main
+
+# clean rule for target.
+ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest_main.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/clean
+.PHONY : ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -84,6 +84,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\CLION\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\CLION\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\CLION\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\CLION\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\CLION\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\CLION\CLion 2024.3.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\\CMakeFiles\progress.marks
@@ -127,6 +172,71 @@ fsoft2025_1DD_2: cmake_check_build_system
 fsoft2025_1DD_2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/build
 .PHONY : fsoft2025_1DD_2/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest_main.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 Project/mock/MockData.obj: Project/mock/MockData.cpp.obj
 .PHONY : Project/mock/MockData.obj
@@ -182,6 +292,7 @@ Project/sources/model/Cart.obj: Project/sources/model/Cart.cpp.obj
 # target to build an object file
 Project/sources/model/Cart.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj
 .PHONY : Project/sources/model/Cart.cpp.obj
 
 Project/sources/model/Cart.i: Project/sources/model/Cart.cpp.i
@@ -190,6 +301,7 @@ Project/sources/model/Cart.i: Project/sources/model/Cart.cpp.i
 # target to preprocess a source file
 Project/sources/model/Cart.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.i
 .PHONY : Project/sources/model/Cart.cpp.i
 
 Project/sources/model/Cart.s: Project/sources/model/Cart.cpp.s
@@ -198,6 +310,7 @@ Project/sources/model/Cart.s: Project/sources/model/Cart.cpp.s
 # target to generate assembly for a file
 Project/sources/model/Cart.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.s
 .PHONY : Project/sources/model/Cart.cpp.s
 
 Project/sources/model/Client.obj: Project/sources/model/Client.cpp.obj
@@ -278,6 +391,7 @@ Project/sources/model/Product.obj: Project/sources/model/Product.cpp.obj
 # target to build an object file
 Project/sources/model/Product.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj
 .PHONY : Project/sources/model/Product.cpp.obj
 
 Project/sources/model/Product.i: Project/sources/model/Product.cpp.i
@@ -286,6 +400,7 @@ Project/sources/model/Product.i: Project/sources/model/Product.cpp.i
 # target to preprocess a source file
 Project/sources/model/Product.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.i
 .PHONY : Project/sources/model/Product.cpp.i
 
 Project/sources/model/Product.s: Project/sources/model/Product.cpp.s
@@ -294,6 +409,7 @@ Project/sources/model/Product.s: Project/sources/model/Product.cpp.s
 # target to generate assembly for a file
 Project/sources/model/Product.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Product.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.s
 .PHONY : Project/sources/model/Product.cpp.s
 
 Project/sources/model/StepUp.obj: Project/sources/model/StepUp.cpp.obj
@@ -326,6 +442,7 @@ Project/sources/model/Supplier.obj: Project/sources/model/Supplier.cpp.obj
 # target to build an object file
 Project/sources/model/Supplier.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj
 .PHONY : Project/sources/model/Supplier.cpp.obj
 
 Project/sources/model/Supplier.i: Project/sources/model/Supplier.cpp.i
@@ -334,6 +451,7 @@ Project/sources/model/Supplier.i: Project/sources/model/Supplier.cpp.i
 # target to preprocess a source file
 Project/sources/model/Supplier.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.i
 .PHONY : Project/sources/model/Supplier.cpp.i
 
 Project/sources/model/Supplier.s: Project/sources/model/Supplier.cpp.s
@@ -342,6 +460,7 @@ Project/sources/model/Supplier.s: Project/sources/model/Supplier.cpp.s
 # target to generate assembly for a file
 Project/sources/model/Supplier.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Supplier.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.s
 .PHONY : Project/sources/model/Supplier.cpp.s
 
 Project/sources/model/SupplierOrder.obj: Project/sources/model/SupplierOrder.cpp.obj
@@ -416,6 +535,78 @@ Project/sources/views/View.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/View.cpp.s
 .PHONY : Project/sources/views/View.cpp.s
 
+ProjectTester/CartTest.obj: ProjectTester/CartTest.cpp.obj
+.PHONY : ProjectTester/CartTest.obj
+
+# target to build an object file
+ProjectTester/CartTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/CartTest.cpp.obj
+.PHONY : ProjectTester/CartTest.cpp.obj
+
+ProjectTester/CartTest.i: ProjectTester/CartTest.cpp.i
+.PHONY : ProjectTester/CartTest.i
+
+# target to preprocess a source file
+ProjectTester/CartTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/CartTest.cpp.i
+.PHONY : ProjectTester/CartTest.cpp.i
+
+ProjectTester/CartTest.s: ProjectTester/CartTest.cpp.s
+.PHONY : ProjectTester/CartTest.s
+
+# target to generate assembly for a file
+ProjectTester/CartTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/CartTest.cpp.s
+.PHONY : ProjectTester/CartTest.cpp.s
+
+ProjectTester/ProductTest.obj: ProjectTester/ProductTest.cpp.obj
+.PHONY : ProjectTester/ProductTest.obj
+
+# target to build an object file
+ProjectTester/ProductTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ProductTest.cpp.obj
+.PHONY : ProjectTester/ProductTest.cpp.obj
+
+ProjectTester/ProductTest.i: ProjectTester/ProductTest.cpp.i
+.PHONY : ProjectTester/ProductTest.i
+
+# target to preprocess a source file
+ProjectTester/ProductTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ProductTest.cpp.i
+.PHONY : ProjectTester/ProductTest.cpp.i
+
+ProjectTester/ProductTest.s: ProjectTester/ProductTest.cpp.s
+.PHONY : ProjectTester/ProductTest.s
+
+# target to generate assembly for a file
+ProjectTester/ProductTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ProductTest.cpp.s
+.PHONY : ProjectTester/ProductTest.cpp.s
+
+ProjectTester/main.obj: ProjectTester/main.cpp.obj
+.PHONY : ProjectTester/main.obj
+
+# target to build an object file
+ProjectTester/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/main.cpp.obj
+.PHONY : ProjectTester/main.cpp.obj
+
+ProjectTester/main.i: ProjectTester/main.cpp.i
+.PHONY : ProjectTester/main.i
+
+# target to preprocess a source file
+ProjectTester/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/main.cpp.i
+.PHONY : ProjectTester/main.cpp.i
+
+ProjectTester/main.s: ProjectTester/main.cpp.s
+.PHONY : ProjectTester/main.s
+
+# target to generate assembly for a file
+ProjectTester/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/main.cpp.s
+.PHONY : ProjectTester/main.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -447,8 +638,17 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... fsoft2025_1DD_2
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
+	@echo ... run_tests
 	@echo ... Project/mock/MockData.obj
 	@echo ... Project/mock/MockData.i
 	@echo ... Project/mock/MockData.s
@@ -485,6 +685,15 @@ help:
 	@echo ... Project/sources/views/View.obj
 	@echo ... Project/sources/views/View.i
 	@echo ... Project/sources/views/View.s
+	@echo ... ProjectTester/CartTest.obj
+	@echo ... ProjectTester/CartTest.i
+	@echo ... ProjectTester/CartTest.s
+	@echo ... ProjectTester/ProductTest.obj
+	@echo ... ProjectTester/ProductTest.i
+	@echo ... ProjectTester/ProductTest.s
+	@echo ... ProjectTester/main.obj
+	@echo ... ProjectTester/main.i
+	@echo ... ProjectTester/main.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

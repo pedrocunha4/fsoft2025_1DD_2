@@ -38,3 +38,27 @@ add_executable(fsoft2025_1DD_2
         Project/headers/model/Cart.h
         Project/sources/model/Cart.cpp
 )
+
+# -------------------
+# TESTES UNITÁRIOS
+# -------------------
+
+# Adicionar GoogleTest
+add_subdirectory(ProjectTester/googleTestLib/googletest)
+
+# Incluir headers do GTest
+include_directories(ProjectTester/googleTestLib/googletest/googletest/include)
+
+# Criar target de testes
+add_executable(run_tests
+        ProjectTester/main.cpp
+        ProjectTester/ProductTest.cpp
+        ProjectTester/CartTest.cpp        
+        Project/sources/model/Product.cpp
+        Project/sources/model/Supplier.cpp
+        Project/sources/model/Cart.cpp
+)
+
+
+# Ligar bibliotecas do GoogleTest
+target_link_libraries(run_tests gtest gtest_main)
