@@ -373,6 +373,7 @@ Project/sources/model/Manager.obj: Project/sources/model/Manager.cpp.obj
 # target to build an object file
 Project/sources/model/Manager.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj
 .PHONY : Project/sources/model/Manager.cpp.obj
 
 Project/sources/model/Manager.i: Project/sources/model/Manager.cpp.i
@@ -381,6 +382,7 @@ Project/sources/model/Manager.i: Project/sources/model/Manager.cpp.i
 # target to preprocess a source file
 Project/sources/model/Manager.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.i
 .PHONY : Project/sources/model/Manager.cpp.i
 
 Project/sources/model/Manager.s: Project/sources/model/Manager.cpp.s
@@ -389,6 +391,7 @@ Project/sources/model/Manager.s: Project/sources/model/Manager.cpp.s
 # target to generate assembly for a file
 Project/sources/model/Manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Manager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.s
 .PHONY : Project/sources/model/Manager.cpp.s
 
 Project/sources/model/Product.obj: Project/sources/model/Product.cpp.obj
@@ -613,6 +616,30 @@ ProjectTester/ClientTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ClientTest.cpp.s
 .PHONY : ProjectTester/ClientTest.cpp.s
 
+ProjectTester/ManagerTest.obj: ProjectTester/ManagerTest.cpp.obj
+.PHONY : ProjectTester/ManagerTest.obj
+
+# target to build an object file
+ProjectTester/ManagerTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ManagerTest.cpp.obj
+.PHONY : ProjectTester/ManagerTest.cpp.obj
+
+ProjectTester/ManagerTest.i: ProjectTester/ManagerTest.cpp.i
+.PHONY : ProjectTester/ManagerTest.i
+
+# target to preprocess a source file
+ProjectTester/ManagerTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ManagerTest.cpp.i
+.PHONY : ProjectTester/ManagerTest.cpp.i
+
+ProjectTester/ManagerTest.s: ProjectTester/ManagerTest.cpp.s
+.PHONY : ProjectTester/ManagerTest.s
+
+# target to generate assembly for a file
+ProjectTester/ManagerTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ManagerTest.cpp.s
+.PHONY : ProjectTester/ManagerTest.cpp.s
+
 ProjectTester/ProductTest.obj: ProjectTester/ProductTest.cpp.obj
 .PHONY : ProjectTester/ProductTest.obj
 
@@ -748,6 +775,9 @@ help:
 	@echo ... ProjectTester/ClientTest.obj
 	@echo ... ProjectTester/ClientTest.i
 	@echo ... ProjectTester/ClientTest.s
+	@echo ... ProjectTester/ManagerTest.obj
+	@echo ... ProjectTester/ManagerTest.i
+	@echo ... ProjectTester/ManagerTest.s
 	@echo ... ProjectTester/ProductTest.obj
 	@echo ... ProjectTester/ProductTest.i
 	@echo ... ProjectTester/ProductTest.s

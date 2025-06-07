@@ -56,11 +56,13 @@ add_executable(run_tests
         ProjectTester/CartTest.cpp
         ProjectTester/ClientTest.cpp
         ProjectTester/ClientOrderTest.cpp
+        ProjectTester/ManagerTest.cpp
         Project/sources/model/Product.cpp
         Project/sources/model/Supplier.cpp
         Project/sources/model/Cart.cpp
         Project/sources/model/Client.cpp
         Project/sources/model/ClientOrder.cpp
+        Project/sources/model/Manager.cpp
 )
 
 
