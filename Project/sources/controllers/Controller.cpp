@@ -886,5 +886,49 @@ void Controller::viewAllClientsOrders() {
 }
 
 
+void Controller::completeClientOrder() {
+    std::string email;
+    std::cout << "Enter the client email: ";
+    std::cin >> email;
+
+    std::vector<Client>& clients = store.getClients();  // permite modificar
+
+    for (Client& client : clients) {
+        if (client.getEmail() == email) {
+            auto& orders = client.getOrders();
+
+            if (orders.empty()) {
+                std::cout << "This client has no orders.\n";
+                return;
+            }
+
+            std::cout << "\nOrders for " << email << ":\n";
+            for (size_t i = 0; i < orders.size(); ++i) {
+                std::cout << "\nOrder #" << (i + 1) << ":\n";
+                orders[i].show();
+            }
+
+            int choice;
+            std::cout << "\nEnter the order number to mark as delivered: ";
+            std::cin >> choice;
+
+            if (choice < 1 || static_cast<size_t>(choice) > orders.size()) {
+                std::cout << "Invalid order number.\n";
+                return;
+            }
+
+            if (orders[choice - 1].isDelivered()) {
+                std::cout << "This order is already marked as delivered.\n";
+            } else {
+                orders[choice - 1].setDelivered(true);
+                std::cout << "Order marked as delivered.\n";
+            }
+            return;
+        }
+    }
+
+    std::cout << "Client not found.\n";
+}
+
 
 

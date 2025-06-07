@@ -21,6 +21,7 @@ public:
     std::string getEmail() const;
     std::string getPassword() const;
     void addOrder(const ClientOrder& order);
+    std::vector<ClientOrder>& getOrders();
     const std::vector<ClientOrder>& getOrders() const;
 
 

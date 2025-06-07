@@ -1,7 +1,7 @@
 #include "Client.h"
 
 Client::Client(const std::string& email, const std::string& password)
-    : email(email), password(password) {}
+        : email(email), password(password) {}
 
 std::string Client::getEmail() const {
     return email;
@@ -21,5 +21,6 @@ void Client::addOrder(const ClientOrder& order) {
 const std::vector<ClientOrder>& Client::getOrders() const {
     return orders;
 }
-
-
+std::vector<ClientOrder>& Client::getOrders() {
+    return orders;
+}

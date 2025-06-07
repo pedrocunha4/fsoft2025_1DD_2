@@ -53,6 +53,7 @@ public:
     void viewCompletedSupplierOrders();
     void viewSupplierOrders();
     void viewAllClientsOrders();
+    void completeClientOrder();
 
 };
 
