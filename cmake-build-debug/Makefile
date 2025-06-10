@@ -427,6 +427,7 @@ Project/sources/model/StepUp.obj: Project/sources/model/StepUp.cpp.obj
 # target to build an object file
 Project/sources/model/StepUp.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj
 .PHONY : Project/sources/model/StepUp.cpp.obj
 
 Project/sources/model/StepUp.i: Project/sources/model/StepUp.cpp.i
@@ -435,6 +436,7 @@ Project/sources/model/StepUp.i: Project/sources/model/StepUp.cpp.i
 # target to preprocess a source file
 Project/sources/model/StepUp.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.i
 .PHONY : Project/sources/model/StepUp.cpp.i
 
 Project/sources/model/StepUp.s: Project/sources/model/StepUp.cpp.s
@@ -443,6 +445,7 @@ Project/sources/model/StepUp.s: Project/sources/model/StepUp.cpp.s
 # target to generate assembly for a file
 Project/sources/model/StepUp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/StepUp.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.s
 .PHONY : Project/sources/model/StepUp.cpp.s
 
 Project/sources/model/Supplier.obj: Project/sources/model/Supplier.cpp.obj
@@ -478,6 +481,7 @@ Project/sources/model/SupplierOrder.obj: Project/sources/model/SupplierOrder.cpp
 # target to build an object file
 Project/sources/model/SupplierOrder.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj
 .PHONY : Project/sources/model/SupplierOrder.cpp.obj
 
 Project/sources/model/SupplierOrder.i: Project/sources/model/SupplierOrder.cpp.i
@@ -486,6 +490,7 @@ Project/sources/model/SupplierOrder.i: Project/sources/model/SupplierOrder.cpp.i
 # target to preprocess a source file
 Project/sources/model/SupplierOrder.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.i
 .PHONY : Project/sources/model/SupplierOrder.cpp.i
 
 Project/sources/model/SupplierOrder.s: Project/sources/model/SupplierOrder.cpp.s
@@ -494,6 +499,7 @@ Project/sources/model/SupplierOrder.s: Project/sources/model/SupplierOrder.cpp.s
 # target to generate assembly for a file
 Project/sources/model/SupplierOrder.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.s
 .PHONY : Project/sources/model/SupplierOrder.cpp.s
 
 Project/sources/views/Utils.obj: Project/sources/views/Utils.cpp.obj
@@ -664,6 +670,78 @@ ProjectTester/ProductTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/ProductTest.cpp.s
 .PHONY : ProjectTester/ProductTest.cpp.s
 
+ProjectTester/StepUpTest.obj: ProjectTester/StepUpTest.cpp.obj
+.PHONY : ProjectTester/StepUpTest.obj
+
+# target to build an object file
+ProjectTester/StepUpTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj
+.PHONY : ProjectTester/StepUpTest.cpp.obj
+
+ProjectTester/StepUpTest.i: ProjectTester/StepUpTest.cpp.i
+.PHONY : ProjectTester/StepUpTest.i
+
+# target to preprocess a source file
+ProjectTester/StepUpTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.i
+.PHONY : ProjectTester/StepUpTest.cpp.i
+
+ProjectTester/StepUpTest.s: ProjectTester/StepUpTest.cpp.s
+.PHONY : ProjectTester/StepUpTest.s
+
+# target to generate assembly for a file
+ProjectTester/StepUpTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.s
+.PHONY : ProjectTester/StepUpTest.cpp.s
+
+ProjectTester/SupplierOrderTest.obj: ProjectTester/SupplierOrderTest.cpp.obj
+.PHONY : ProjectTester/SupplierOrderTest.obj
+
+# target to build an object file
+ProjectTester/SupplierOrderTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj
+.PHONY : ProjectTester/SupplierOrderTest.cpp.obj
+
+ProjectTester/SupplierOrderTest.i: ProjectTester/SupplierOrderTest.cpp.i
+.PHONY : ProjectTester/SupplierOrderTest.i
+
+# target to preprocess a source file
+ProjectTester/SupplierOrderTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.i
+.PHONY : ProjectTester/SupplierOrderTest.cpp.i
+
+ProjectTester/SupplierOrderTest.s: ProjectTester/SupplierOrderTest.cpp.s
+.PHONY : ProjectTester/SupplierOrderTest.s
+
+# target to generate assembly for a file
+ProjectTester/SupplierOrderTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.s
+.PHONY : ProjectTester/SupplierOrderTest.cpp.s
+
+ProjectTester/SupplierTest.obj: ProjectTester/SupplierTest.cpp.obj
+.PHONY : ProjectTester/SupplierTest.obj
+
+# target to build an object file
+ProjectTester/SupplierTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj
+.PHONY : ProjectTester/SupplierTest.cpp.obj
+
+ProjectTester/SupplierTest.i: ProjectTester/SupplierTest.cpp.i
+.PHONY : ProjectTester/SupplierTest.i
+
+# target to preprocess a source file
+ProjectTester/SupplierTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.i
+.PHONY : ProjectTester/SupplierTest.cpp.i
+
+ProjectTester/SupplierTest.s: ProjectTester/SupplierTest.cpp.s
+.PHONY : ProjectTester/SupplierTest.s
+
+# target to generate assembly for a file
+ProjectTester/SupplierTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.s
+.PHONY : ProjectTester/SupplierTest.cpp.s
+
 ProjectTester/main.obj: ProjectTester/main.cpp.obj
 .PHONY : ProjectTester/main.obj
 
@@ -781,6 +859,15 @@ help:
 	@echo ... ProjectTester/ProductTest.obj
 	@echo ... ProjectTester/ProductTest.i
 	@echo ... ProjectTester/ProductTest.s
+	@echo ... ProjectTester/StepUpTest.obj
+	@echo ... ProjectTester/StepUpTest.i
+	@echo ... ProjectTester/StepUpTest.s
+	@echo ... ProjectTester/SupplierOrderTest.obj
+	@echo ... ProjectTester/SupplierOrderTest.i
+	@echo ... ProjectTester/SupplierOrderTest.s
+	@echo ... ProjectTester/SupplierTest.obj
+	@echo ... ProjectTester/SupplierTest.i
+	@echo ... ProjectTester/SupplierTest.s
 	@echo ... ProjectTester/main.obj
 	@echo ... ProjectTester/main.i
 	@echo ... ProjectTester/main.s

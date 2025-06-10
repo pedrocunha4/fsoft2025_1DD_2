@@ -158,11 +158,56 @@ CMakeFiles/run_tests.dir/ProjectTester/ManagerTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/ProjectTester/ManagerTest.cpp.s"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\ManagerTest.cpp -o CMakeFiles\run_tests.dir\ProjectTester\ManagerTest.cpp.s
 
+CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
+CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/SupplierTest.cpp
+CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj -MF CMakeFiles\run_tests.dir\ProjectTester\SupplierTest.cpp.obj.d -o CMakeFiles\run_tests.dir\ProjectTester\SupplierTest.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\SupplierTest.cpp
+
+CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\SupplierTest.cpp > CMakeFiles\run_tests.dir\ProjectTester\SupplierTest.cpp.i
+
+CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\SupplierTest.cpp -o CMakeFiles\run_tests.dir\ProjectTester\SupplierTest.cpp.s
+
+CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
+CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/SupplierOrderTest.cpp
+CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj -MF CMakeFiles\run_tests.dir\ProjectTester\SupplierOrderTest.cpp.obj.d -o CMakeFiles\run_tests.dir\ProjectTester\SupplierOrderTest.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\SupplierOrderTest.cpp
+
+CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\SupplierOrderTest.cpp > CMakeFiles\run_tests.dir\ProjectTester\SupplierOrderTest.cpp.i
+
+CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\SupplierOrderTest.cpp -o CMakeFiles\run_tests.dir\ProjectTester\SupplierOrderTest.cpp.s
+
+CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
+CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/StepUpTest.cpp
+CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj -MF CMakeFiles\run_tests.dir\ProjectTester\StepUpTest.cpp.obj.d -o CMakeFiles\run_tests.dir\ProjectTester\StepUpTest.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\StepUpTest.cpp
+
+CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\StepUpTest.cpp > CMakeFiles\run_tests.dir\ProjectTester\StepUpTest.cpp.i
+
+CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\ProjectTester\StepUpTest.cpp -o CMakeFiles\run_tests.dir\ProjectTester\StepUpTest.cpp.s
+
 CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
 CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Product.cpp
 CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj -MF CMakeFiles\run_tests.dir\Project\sources\model\Product.cpp.obj.d -o CMakeFiles\run_tests.dir\Project\sources\model\Product.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Product.cpp
 
 CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.i: cmake_force
@@ -173,26 +218,11 @@ CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.s"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Product.cpp -o CMakeFiles\run_tests.dir\Project\sources\model\Product.cpp.s
 
-CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj: CMakeFiles/run_tests.dir/flags.make
-CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
-CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Supplier.cpp
-CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj"
-	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj -MF CMakeFiles\run_tests.dir\Project\sources\model\Supplier.cpp.obj.d -o CMakeFiles\run_tests.dir\Project\sources\model\Supplier.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Supplier.cpp
-
-CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.i"
-	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Supplier.cpp > CMakeFiles\run_tests.dir\Project\sources\model\Supplier.cpp.i
-
-CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.s"
-	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Supplier.cpp -o CMakeFiles\run_tests.dir\Project\sources\model\Supplier.cpp.s
-
 CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj: CMakeFiles/run_tests.dir/flags.make
 CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
 CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Cart.cpp
 CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj -MF CMakeFiles\run_tests.dir\Project\sources\model\Cart.cpp.obj.d -o CMakeFiles\run_tests.dir\Project\sources\model\Cart.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Cart.cpp
 
 CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.i: cmake_force
@@ -207,7 +237,7 @@ CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj: CMakeFiles/run_te
 CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
 CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Client.cpp
 CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj -MF CMakeFiles\run_tests.dir\Project\sources\model\Client.cpp.obj.d -o CMakeFiles\run_tests.dir\Project\sources\model\Client.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Client.cpp
 
 CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.i: cmake_force
@@ -222,7 +252,7 @@ CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj: CMakeFiles/r
 CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
 CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/ClientOrder.cpp
 CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj -MF CMakeFiles\run_tests.dir\Project\sources\model\ClientOrder.cpp.obj.d -o CMakeFiles\run_tests.dir\Project\sources\model\ClientOrder.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\ClientOrder.cpp
 
 CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.i: cmake_force
@@ -237,7 +267,7 @@ CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj: CMakeFiles/run_t
 CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
 CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Manager.cpp
 CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj -MF CMakeFiles\run_tests.dir\Project\sources\model\Manager.cpp.obj.d -o CMakeFiles\run_tests.dir\Project\sources\model\Manager.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Manager.cpp
 
 CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.i: cmake_force
@@ -248,6 +278,51 @@ CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.s"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Manager.cpp -o CMakeFiles\run_tests.dir\Project\sources\model\Manager.cpp.s
 
+CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
+CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Supplier.cpp
+CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj -MF CMakeFiles\run_tests.dir\Project\sources\model\Supplier.cpp.obj.d -o CMakeFiles\run_tests.dir\Project\sources\model\Supplier.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Supplier.cpp
+
+CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Supplier.cpp > CMakeFiles\run_tests.dir\Project\sources\model\Supplier.cpp.i
+
+CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Supplier.cpp -o CMakeFiles\run_tests.dir\Project\sources\model\Supplier.cpp.s
+
+CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
+CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/SupplierOrder.cpp
+CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj -MF CMakeFiles\run_tests.dir\Project\sources\model\SupplierOrder.cpp.obj.d -o CMakeFiles\run_tests.dir\Project\sources\model\SupplierOrder.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\SupplierOrder.cpp
+
+CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\SupplierOrder.cpp > CMakeFiles\run_tests.dir\Project\sources\model\SupplierOrder.cpp.i
+
+CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\SupplierOrder.cpp -o CMakeFiles\run_tests.dir\Project\sources\model\SupplierOrder.cpp.s
+
+CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj: CMakeFiles/run_tests.dir/flags.make
+CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj: CMakeFiles/run_tests.dir/includes_CXX.rsp
+CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/StepUp.cpp
+CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj: CMakeFiles/run_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj -MF CMakeFiles\run_tests.dir\Project\sources\model\StepUp.cpp.obj.d -o CMakeFiles\run_tests.dir\Project\sources\model\StepUp.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\StepUp.cpp
+
+CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\StepUp.cpp > CMakeFiles\run_tests.dir\Project\sources\model\StepUp.cpp.i
+
+CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\StepUp.cpp -o CMakeFiles\run_tests.dir\Project\sources\model\StepUp.cpp.s
+
 # Object files for target run_tests
 run_tests_OBJECTS = \
 "CMakeFiles/run_tests.dir/ProjectTester/main.cpp.obj" \
@@ -256,12 +331,17 @@ run_tests_OBJECTS = \
 "CMakeFiles/run_tests.dir/ProjectTester/ClientTest.cpp.obj" \
 "CMakeFiles/run_tests.dir/ProjectTester/ClientOrderTest.cpp.obj" \
 "CMakeFiles/run_tests.dir/ProjectTester/ManagerTest.cpp.obj" \
+"CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj" \
+"CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj" \
+"CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj" \
 "CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj" \
-"CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj" \
 "CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj" \
 "CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj" \
 "CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj" \
-"CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj"
+"CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj" \
+"CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj" \
+"CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj" \
+"CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj"
 
 # External object files for target run_tests
 run_tests_EXTERNAL_OBJECTS =
@@ -272,12 +352,17 @@ run_tests.exe: CMakeFiles/run_tests.dir/ProjectTester/CartTest.cpp.obj
 run_tests.exe: CMakeFiles/run_tests.dir/ProjectTester/ClientTest.cpp.obj
 run_tests.exe: CMakeFiles/run_tests.dir/ProjectTester/ClientOrderTest.cpp.obj
 run_tests.exe: CMakeFiles/run_tests.dir/ProjectTester/ManagerTest.cpp.obj
+run_tests.exe: CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj
+run_tests.exe: CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj
+run_tests.exe: CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj
 run_tests.exe: CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj
-run_tests.exe: CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj
 run_tests.exe: CMakeFiles/run_tests.dir/Project/sources/model/Cart.cpp.obj
 run_tests.exe: CMakeFiles/run_tests.dir/Project/sources/model/Client.cpp.obj
 run_tests.exe: CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj
 run_tests.exe: CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj
+run_tests.exe: CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj
+run_tests.exe: CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj
+run_tests.exe: CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj
 run_tests.exe: CMakeFiles/run_tests.dir/build.make
 run_tests.exe: lib/libgtest.a
 run_tests.exe: lib/libgtest_main.a
@@ -285,7 +370,7 @@ run_tests.exe: lib/libgtest.a
 run_tests.exe: CMakeFiles/run_tests.dir/linkLibs.rsp
 run_tests.exe: CMakeFiles/run_tests.dir/objects1.rsp
 run_tests.exe: CMakeFiles/run_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable run_tests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable run_tests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\run_tests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

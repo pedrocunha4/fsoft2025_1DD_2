@@ -13,12 +13,17 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/ClientOrder.cpp" "CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/Project/sources/model/ClientOrder.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Manager.cpp" "CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/Project/sources/model/Manager.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Product.cpp" "CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/Project/sources/model/Product.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/StepUp.cpp" "CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/Project/sources/model/StepUp.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Supplier.cpp" "CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/Project/sources/model/Supplier.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/SupplierOrder.cpp" "CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/Project/sources/model/SupplierOrder.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/CartTest.cpp" "CMakeFiles/run_tests.dir/ProjectTester/CartTest.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/ProjectTester/CartTest.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/ClientOrderTest.cpp" "CMakeFiles/run_tests.dir/ProjectTester/ClientOrderTest.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/ProjectTester/ClientOrderTest.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/ClientTest.cpp" "CMakeFiles/run_tests.dir/ProjectTester/ClientTest.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/ProjectTester/ClientTest.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/ManagerTest.cpp" "CMakeFiles/run_tests.dir/ProjectTester/ManagerTest.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/ProjectTester/ManagerTest.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/ProductTest.cpp" "CMakeFiles/run_tests.dir/ProjectTester/ProductTest.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/ProjectTester/ProductTest.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/StepUpTest.cpp" "CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/ProjectTester/StepUpTest.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/SupplierOrderTest.cpp" "CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/ProjectTester/SupplierOrderTest.cpp.obj.d"
+  "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/SupplierTest.cpp" "CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/ProjectTester/SupplierTest.cpp.obj.d"
   "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/main.cpp" "CMakeFiles/run_tests.dir/ProjectTester/main.cpp.obj" "gcc" "CMakeFiles/run_tests.dir/ProjectTester/main.cpp.obj.d"
   )
 
