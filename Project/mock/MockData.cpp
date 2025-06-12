@@ -24,7 +24,7 @@ void MockData::generateData(StepUp& store) {
     store.getProducts().push_back(Product(3, "Puma RS-X", "Puma", 15, "Sports",
                                           "Sporty, stylish and comfortable", 55.0f, 99.99f, puma));
 
-    // Produtos sem supplier real (caso ainda queiras manter alguns genéricos)
+    // Produtos sem supplier real
     store.getProducts().push_back(Product(4, "Converse All Star", "Converse", 10, "Casual",
                                           "Iconic canvas sneakers", 25.0f, 59.99f));
     store.getProducts().push_back(Product(5, "New Balance 574", "New Balance", 7, "Lifestyle",
