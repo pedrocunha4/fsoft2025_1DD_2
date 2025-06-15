@@ -37,6 +37,14 @@ add_executable(fsoft2025_1DD_2
         Project/sources/views/Utils.cpp
         Project/headers/model/Cart.h
         Project/sources/model/Cart.cpp
+        Project/headers/exceptions/ProductNotFoundException.h
+        Project/sources/exceptions/ProductNotFoundException.cpp
+        Project/headers/exceptions/EmptyCartException.h
+        Project/sources/exceptions/EmptyCartException.cpp
+        Project/sources/exceptions/InvalidLoginException.cpp
+        Project/headers/exceptions/InvalidLoginException.h
+        Project/headers/exceptions/OrderNotFoundException.h
+        Project/sources/exceptions/OrderNotFoundException.cpp
 )
 
 # -------------------

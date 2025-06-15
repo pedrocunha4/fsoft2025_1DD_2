@@ -8,6 +8,10 @@
 #include "../../headers/model/Cart.h"
 #include "../../headers/model/Product.h"
 #include "../../headers/model/ClientOrder.h"
+#include "../../headers/exceptions/ProductNotFoundException.h"
+#include "../../headers/exceptions/EmptyCartException.h"
+#include "../../headers/exceptions/InvalidLoginException.h"
+#include "../../headers/exceptions/OrderNotFoundException.h"
 #include <thread>
 #include <chrono>
 
@@ -49,7 +53,11 @@ void Controller::runClient() {
                 viewProductsGuest();
                 break;
             case 2:
-                loginClient();
+                try {
+                    loginClient();
+                } catch (const InvalidLoginException& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
                 break;
             case 3:
                 signUpClient();
@@ -106,7 +114,11 @@ void Controller::viewProductsGuest() {
 
         switch (option) {
             case 1:
-                addToCart(cart);
+                try {
+                    addToCart(cart);
+                } catch (const ProductNotFoundException& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
             break;
             case 2:
                 viewCart(cart);
@@ -141,7 +153,7 @@ void Controller::loginClient() {
     }
 
     if (!found) {
-        std::cout << "Invalid email or password. Please try again.\n";
+        throw InvalidLoginException();
     }
 }
 
@@ -252,7 +264,7 @@ void Controller::addToCart(Cart& cart) {
         }
     }
 
-    std::cout << "Product not found.\n";
+    throw ProductNotFoundException();
 }
 
 void Controller::viewCart(Cart& cart) {
@@ -269,10 +281,18 @@ void Controller::viewCart(Cart& cart) {
 
         switch (option) {
             case 1:
-                removeFromCart(cart);  // Remover produto
+                try {
+                    removeFromCart(cart);
+                } catch (const ProductNotFoundException& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
             break;
             case 2:
-                completeOrder(cart);  // Finalizar a encomenda
+                try {
+                    completeOrder(cart);
+                } catch (const EmptyCartException& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
             break;
             case 0:
                 std::cout << "Returning to products menu...\n";
@@ -294,15 +314,13 @@ void Controller::removeFromCart(Cart& cart) {
 
 void Controller::completeOrder(Cart& cart) {
     if (cart.isEmpty()) {
-        std::cout << "Your cart is empty! Cannot complete order.\n";
-        return;
+        throw EmptyCartException();
     }
 
     if (!isAuthenticated()) {
         std::cout << "You must be logged in to complete the order.\n";
         return;
     }
-
     // Subtrair stock
     for (const auto& item : cart.getItems()) {
         Product& product = store.findProductById(item.first.getId());
@@ -364,7 +382,7 @@ void Controller::loginManager() {
         std::cout << "Manager login successful!\n";
         runManagerMenu();
     } else {
-        std::cout << "Invalid credentials. Access denied.\n";
+        throw InvalidLoginException();
     }
 }
 
@@ -376,7 +394,11 @@ void Controller::runManager() {
 
         switch (option) {
             case 1:
-                loginManager();
+                try {
+                    loginManager();
+                } catch (const InvalidLoginException& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
             break;
             case 0:
                 std::cout << "Returning...\n";
@@ -435,10 +457,18 @@ void Controller::manageProductsMenu() {
                 addProduct();
             break;
             case 2:
-                editProduct();
+                try {
+                    editProduct();
+                } catch (const ProductNotFoundException& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
             break;
             case 3:
-                deleteProduct();
+                try {
+                    deleteProduct();
+                } catch (const ProductNotFoundException& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
             break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
@@ -466,7 +496,11 @@ void Controller::manageSuppliersMenu() {
                 placeOrderToSupplier();
                 break;
             case 2:
-                viewSupplierOrders();
+                try {
+                    viewSupplierOrders();
+                } catch (const OrderNotFoundException& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
                 break;
             case 3:
                 viewCompletedSupplierOrders();
@@ -501,7 +535,11 @@ void Controller::manageClientsMenu() {
                 deleteClientByEmail();
             break;
             case 3:
-                completeClientOrder();
+                try {
+                    completeClientOrder();
+                } catch (const OrderNotFoundException& e) {
+                    std::cout << "Error: " << e.what() << std::endl;
+                }
             break;
             case 0:
                 std::cout << "Returning to Manager Menu...\n";
@@ -615,7 +653,7 @@ void Controller::editProduct() {
         }
     }
 
-    std::cout << "Product with ID " << id << " not found.\n";
+    throw ProductNotFoundException();
     listProducts();
 }
 void Controller::deleteProduct() {
@@ -643,7 +681,7 @@ void Controller::deleteProduct() {
             std::cout << "Deletion cancelled.\n";
         }
     } else {
-        std::cout << "Product with ID " << id << " not found.\n";
+        throw ProductNotFoundException();
     }
     listProducts();
 }
@@ -813,7 +851,7 @@ void Controller::viewSupplierOrders() {
             ordersRef.erase(it);
             std::cout << "Order #" << cancelId << " was cancelled.\n";
         } else {
-            std::cout << "Order not found.\n";
+            throw OrderNotFoundException();
         }
 
     } else {
@@ -885,7 +923,6 @@ void Controller::viewAllClientsOrders() {
     std::cout << "\n=============================\n";
 }
 
-
 void Controller::completeClientOrder() {
     std::string email;
     std::cout << "Enter the client email: ";
@@ -913,9 +950,9 @@ void Controller::completeClientOrder() {
             std::cin >> choice;
 
             if (choice < 1 || static_cast<size_t>(choice) > orders.size()) {
-                std::cout << "Invalid order number.\n";
-                return;
+                throw OrderNotFoundException();
             }
+
 
             if (orders[choice - 1].isDelivered()) {
                 std::cout << "This order is already marked as delivered.\n";

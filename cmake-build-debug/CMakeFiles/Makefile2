@@ -135,12 +135,12 @@ ProjectTester/googleTestLib/googletest/googletest/clean: ProjectTester/googleTes
 CMakeFiles/fsoft2025_1DD_2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target fsoft2025_1DD_2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 "Built target fsoft2025_1DD_2"
 .PHONY : CMakeFiles/fsoft2025_1DD_2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/fsoft2025_1DD_2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/fsoft2025_1DD_2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/fsoft2025_1DD_2.dir/rule
@@ -158,11 +158,11 @@ CMakeFiles/fsoft2025_1DD_2.dir/clean:
 # Target rules for target CMakeFiles/run_tests.dir
 
 # All Build rule for target.
-CMakeFiles/run_tests.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/run_tests.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/run_tests.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\run_tests.dir\build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
@@ -188,7 +188,7 @@ CMakeFiles/run_tests.dir/clean:
 ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=15,16 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target gmock"
 .PHONY : ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -211,11 +211,11 @@ ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/clean:
 # Target rules for target ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/all
 ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
+ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/all: ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock.dir/all
 	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=17,18 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target gmock_main"
 .PHONY : ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -241,7 +241,7 @@ ProjectTester/googleTestLib/googletest/googlemock/CMakeFiles/gmock_main.dir/clea
 ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=23,24 "Built target gtest"
 .PHONY : ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -267,7 +267,7 @@ ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/clean:
 ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/all: ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest_main.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f ProjectTester\googleTestLib\googletest\googletest\CMakeFiles\gtest_main.dir\build.make ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=25,26 "Built target gtest_main"
 .PHONY : ProjectTester/googleTestLib/googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.

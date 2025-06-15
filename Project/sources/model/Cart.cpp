@@ -1,5 +1,6 @@
 #include "../../headers/model/Cart.h"
 #include "../../headers/model/Product.h"
+#include "../../headers/exceptions/ProductNotFoundException.h"
 #include <iostream>
 #include <iomanip>
 
@@ -37,7 +38,8 @@ void Cart::removeProductById(int productId) {
             return;
         }
     }
-    std::cout << "Product with the given ID not found in the cart.\n";
+    throw ProductNotFoundException();
+
 }
 
 

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "fsoft2025_1DD_2.exe"
+			"path" : "run_tests.exe"
 		},
 		{
-			"path" : "fsoft2025_1DD_2.pdb"
+			"path" : "run_tests.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -14,6 +14,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
@@ -28,19 +29,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 16,
+				"line" : 61,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
+				"file" : 0,
+				"line" : 83,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
 				"file" : 0,
 				"line" : 7,
 				"parent" : 0
 			},
 			{
-				"command" : 1,
+				"command" : 2,
 				"file" : 0,
-				"line" : 50,
+				"line" : 58,
 				"parent" : 0
 			}
 		]
@@ -57,28 +64,34 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/controllers"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/views"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
+					"isSystem" : true,
 					"path" : "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/googleTestLib/googletest/googletest/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/ProjectTester/googleTestLib/googletest/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -86,7 +99,7 @@
 			{
 				"backtraces" : 
 				[
-					1
+					2
 				],
 				"standard" : "20"
 			},
@@ -103,12 +116,27 @@
 				8,
 				9,
 				10,
+				11,
 				12,
-				14
+				13,
+				14,
+				15,
+				16
 			]
 		}
 	],
-	"id" : "fsoft2025_1DD_2::@6890427a1f51a3e7e1df",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "gtest::@e00a60dafc1dc80cb423"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@e00a60dafc1dc80cb423"
+		}
+	],
+	"id" : "run_tests::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -122,14 +150,29 @@
 				"role" : "flags"
 			},
 			{
+				"backtrace" : 2,
+				"fragment" : "lib\\libgtest.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "lib\\libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "lib\\libgtest.a",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "fsoft2025_1DD_2",
-	"nameOnDisk" : "fsoft2025_1DD_2.exe",
+	"name" : "run_tests",
+	"nameOnDisk" : "run_tests.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -152,16 +195,12 @@
 				8,
 				9,
 				10,
-				12,
-				14
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
 				11,
-				13
+				12,
+				13,
+				14,
+				15,
+				16
 			]
 		}
 	],
@@ -170,25 +209,55 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "ProjectTester/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Project/sources/controllers/Controller.cpp",
+			"path" : "ProjectTester/ProductTest.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Project/sources/views/View.cpp",
+			"path" : "ProjectTester/CartTest.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Project/sources/model/StepUp.cpp",
+			"path" : "ProjectTester/ClientTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ProjectTester/ClientOrderTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ProjectTester/ManagerTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ProjectTester/SupplierTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ProjectTester/SupplierOrderTest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ProjectTester/StepUpTest.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -200,7 +269,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "Project/sources/model/Cart.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "Project/sources/model/Client.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Project/sources/model/ClientOrder.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -218,41 +299,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Project/sources/model/ClientOrder.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
 			"path" : "Project/sources/model/SupplierOrder.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Project/mock/MockData.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Project/headers/views/Utils.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Project/sources/views/Utils.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Project/headers/model/Cart.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Project/sources/model/Cart.cpp",
+			"path" : "Project/sources/model/StepUp.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

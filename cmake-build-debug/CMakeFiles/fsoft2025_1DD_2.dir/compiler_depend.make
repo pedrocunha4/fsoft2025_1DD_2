@@ -395,6 +395,10 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj: C
   C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
   C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/controllers/Controller.h \
+  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/EmptyCartException.h \
+  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/InvalidLoginException.h \
+  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/OrderNotFoundException.h \
+  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/ProductNotFoundException.h \
   C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model/Cart.h \
   C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model/Client.h \
   C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model/ClientOrder.h \
@@ -405,6 +409,114 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj: C
   C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model/SupplierOrder.h \
   C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/views/Utils.h \
   C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/views/View.h
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/EmptyCartException.cpp \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/EmptyCartException.h
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/InvalidLoginException.cpp \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/InvalidLoginException.h
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/OrderNotFoundException.cpp \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/OrderNotFoundException.h
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/ProductNotFoundException.cpp \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
+  C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/ProductNotFoundException.h
 
 CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Cart.cpp \
   C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/binders.h \
@@ -1879,6 +1991,8 @@ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
 
 C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h:
 
+C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/EmptyCartException.h:
+
 C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h:
 
 C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h:
@@ -1906,6 +2020,8 @@ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
 C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h:
 
 C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ranges_cmp.h:
+
+C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/InvalidLoginException.cpp:
 
 C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model/StepUp.h:
 
@@ -2094,6 +2210,8 @@ C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
 C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
 
 C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
+
+C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/EmptyCartException.cpp:
 
 C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_mutex.h:
 
@@ -2309,9 +2427,19 @@ C:/CLION/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/stdint.h:
 
 C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/controllers/Controller.h:
 
+C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/InvalidLoginException.h:
+
+C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/OrderNotFoundException.h:
+
+C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/ProductNotFoundException.h:
+
 C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model/Cart.h:
 
 C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/views/Utils.h:
+
+C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/OrderNotFoundException.cpp:
+
+C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/ProductNotFoundException.cpp:
 
 C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/model/Manager.cpp:
 

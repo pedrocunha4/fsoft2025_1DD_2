@@ -286,6 +286,102 @@ Project/sources/controllers/Controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.s
 .PHONY : Project/sources/controllers/Controller.cpp.s
 
+Project/sources/exceptions/EmptyCartException.obj: Project/sources/exceptions/EmptyCartException.cpp.obj
+.PHONY : Project/sources/exceptions/EmptyCartException.obj
+
+# target to build an object file
+Project/sources/exceptions/EmptyCartException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj
+.PHONY : Project/sources/exceptions/EmptyCartException.cpp.obj
+
+Project/sources/exceptions/EmptyCartException.i: Project/sources/exceptions/EmptyCartException.cpp.i
+.PHONY : Project/sources/exceptions/EmptyCartException.i
+
+# target to preprocess a source file
+Project/sources/exceptions/EmptyCartException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.i
+.PHONY : Project/sources/exceptions/EmptyCartException.cpp.i
+
+Project/sources/exceptions/EmptyCartException.s: Project/sources/exceptions/EmptyCartException.cpp.s
+.PHONY : Project/sources/exceptions/EmptyCartException.s
+
+# target to generate assembly for a file
+Project/sources/exceptions/EmptyCartException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.s
+.PHONY : Project/sources/exceptions/EmptyCartException.cpp.s
+
+Project/sources/exceptions/InvalidLoginException.obj: Project/sources/exceptions/InvalidLoginException.cpp.obj
+.PHONY : Project/sources/exceptions/InvalidLoginException.obj
+
+# target to build an object file
+Project/sources/exceptions/InvalidLoginException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj
+.PHONY : Project/sources/exceptions/InvalidLoginException.cpp.obj
+
+Project/sources/exceptions/InvalidLoginException.i: Project/sources/exceptions/InvalidLoginException.cpp.i
+.PHONY : Project/sources/exceptions/InvalidLoginException.i
+
+# target to preprocess a source file
+Project/sources/exceptions/InvalidLoginException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.i
+.PHONY : Project/sources/exceptions/InvalidLoginException.cpp.i
+
+Project/sources/exceptions/InvalidLoginException.s: Project/sources/exceptions/InvalidLoginException.cpp.s
+.PHONY : Project/sources/exceptions/InvalidLoginException.s
+
+# target to generate assembly for a file
+Project/sources/exceptions/InvalidLoginException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.s
+.PHONY : Project/sources/exceptions/InvalidLoginException.cpp.s
+
+Project/sources/exceptions/OrderNotFoundException.obj: Project/sources/exceptions/OrderNotFoundException.cpp.obj
+.PHONY : Project/sources/exceptions/OrderNotFoundException.obj
+
+# target to build an object file
+Project/sources/exceptions/OrderNotFoundException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj
+.PHONY : Project/sources/exceptions/OrderNotFoundException.cpp.obj
+
+Project/sources/exceptions/OrderNotFoundException.i: Project/sources/exceptions/OrderNotFoundException.cpp.i
+.PHONY : Project/sources/exceptions/OrderNotFoundException.i
+
+# target to preprocess a source file
+Project/sources/exceptions/OrderNotFoundException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.i
+.PHONY : Project/sources/exceptions/OrderNotFoundException.cpp.i
+
+Project/sources/exceptions/OrderNotFoundException.s: Project/sources/exceptions/OrderNotFoundException.cpp.s
+.PHONY : Project/sources/exceptions/OrderNotFoundException.s
+
+# target to generate assembly for a file
+Project/sources/exceptions/OrderNotFoundException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.s
+.PHONY : Project/sources/exceptions/OrderNotFoundException.cpp.s
+
+Project/sources/exceptions/ProductNotFoundException.obj: Project/sources/exceptions/ProductNotFoundException.cpp.obj
+.PHONY : Project/sources/exceptions/ProductNotFoundException.obj
+
+# target to build an object file
+Project/sources/exceptions/ProductNotFoundException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj
+.PHONY : Project/sources/exceptions/ProductNotFoundException.cpp.obj
+
+Project/sources/exceptions/ProductNotFoundException.i: Project/sources/exceptions/ProductNotFoundException.cpp.i
+.PHONY : Project/sources/exceptions/ProductNotFoundException.i
+
+# target to preprocess a source file
+Project/sources/exceptions/ProductNotFoundException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.i
+.PHONY : Project/sources/exceptions/ProductNotFoundException.cpp.i
+
+Project/sources/exceptions/ProductNotFoundException.s: Project/sources/exceptions/ProductNotFoundException.cpp.s
+.PHONY : Project/sources/exceptions/ProductNotFoundException.s
+
+# target to generate assembly for a file
+Project/sources/exceptions/ProductNotFoundException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\fsoft2025_1DD_2.dir\build.make CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.s
+.PHONY : Project/sources/exceptions/ProductNotFoundException.cpp.s
+
 Project/sources/model/Cart.obj: Project/sources/model/Cart.cpp.obj
 .PHONY : Project/sources/model/Cart.obj
 
@@ -814,6 +910,18 @@ help:
 	@echo ... Project/sources/controllers/Controller.obj
 	@echo ... Project/sources/controllers/Controller.i
 	@echo ... Project/sources/controllers/Controller.s
+	@echo ... Project/sources/exceptions/EmptyCartException.obj
+	@echo ... Project/sources/exceptions/EmptyCartException.i
+	@echo ... Project/sources/exceptions/EmptyCartException.s
+	@echo ... Project/sources/exceptions/InvalidLoginException.obj
+	@echo ... Project/sources/exceptions/InvalidLoginException.i
+	@echo ... Project/sources/exceptions/InvalidLoginException.s
+	@echo ... Project/sources/exceptions/OrderNotFoundException.obj
+	@echo ... Project/sources/exceptions/OrderNotFoundException.i
+	@echo ... Project/sources/exceptions/OrderNotFoundException.s
+	@echo ... Project/sources/exceptions/ProductNotFoundException.obj
+	@echo ... Project/sources/exceptions/ProductNotFoundException.i
+	@echo ... Project/sources/exceptions/ProductNotFoundException.s
 	@echo ... Project/sources/model/Cart.obj
 	@echo ... Project/sources/model/Cart.i
 	@echo ... Project/sources/model/Cart.s

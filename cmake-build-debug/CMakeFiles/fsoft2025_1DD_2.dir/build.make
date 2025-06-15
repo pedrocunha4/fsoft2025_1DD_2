@@ -263,6 +263,66 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.s"
 	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\model\Cart.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\model\Cart.cpp.s
 
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/ProductNotFoundException.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\ProductNotFoundException.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\ProductNotFoundException.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\ProductNotFoundException.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\ProductNotFoundException.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\ProductNotFoundException.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\ProductNotFoundException.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\ProductNotFoundException.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/EmptyCartException.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\EmptyCartException.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\EmptyCartException.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\EmptyCartException.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\EmptyCartException.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\EmptyCartException.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\EmptyCartException.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\EmptyCartException.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/InvalidLoginException.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\InvalidLoginException.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\InvalidLoginException.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\InvalidLoginException.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\InvalidLoginException.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\InvalidLoginException.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\InvalidLoginException.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\InvalidLoginException.cpp.s
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/flags.make
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/includes_CXX.rsp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj: C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/sources/exceptions/OrderNotFoundException.cpp
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj: CMakeFiles/fsoft2025_1DD_2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj -MF CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\OrderNotFoundException.cpp.obj.d -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\OrderNotFoundException.cpp.obj -c C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\OrderNotFoundException.cpp
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.i"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\OrderNotFoundException.cpp > CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\OrderNotFoundException.cpp.i
+
+CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.s"
+	C:\CLION\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\Project\sources\exceptions\OrderNotFoundException.cpp -o CMakeFiles\fsoft2025_1DD_2.dir\Project\sources\exceptions\OrderNotFoundException.cpp.s
+
 # Object files for target fsoft2025_1DD_2
 fsoft2025_1DD_2_OBJECTS = \
 "CMakeFiles/fsoft2025_1DD_2.dir/main.cpp.obj" \
@@ -277,7 +337,11 @@ fsoft2025_1DD_2_OBJECTS = \
 "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/SupplierOrder.cpp.obj" \
 "CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj" \
 "CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/Utils.cpp.obj" \
-"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj"
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj" \
+"CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj"
 
 # External object files for target fsoft2025_1DD_2
 fsoft2025_1DD_2_EXTERNAL_OBJECTS =
@@ -295,11 +359,15 @@ fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Suppli
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/mock/MockData.cpp.obj
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/views/Utils.cpp.obj
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/model/Cart.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/ProductNotFoundException.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/EmptyCartException.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/InvalidLoginException.cpp.obj
+fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/exceptions/OrderNotFoundException.cpp.obj
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/build.make
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/linkLibs.rsp
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/objects1.rsp
 fsoft2025_1DD_2.exe: CMakeFiles/fsoft2025_1DD_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable fsoft2025_1DD_2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\HP\Documents\GitHub\FSOFT\fsoft2025_1DD_2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable fsoft2025_1DD_2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\fsoft2025_1DD_2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

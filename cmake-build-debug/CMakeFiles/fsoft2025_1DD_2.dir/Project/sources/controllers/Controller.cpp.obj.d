@@ -203,6 +203,10 @@ CMakeFiles/fsoft2025_1DD_2.dir/Project/sources/controllers/Controller.cpp.obj: \
  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model/Cart.h \
  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model/Product.h \
  C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/model/ClientOrder.h \
+ C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/ProductNotFoundException.h \
+ C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/EmptyCartException.h \
+ C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/InvalidLoginException.h \
+ C:/Users/HP/Documents/GitHub/FSOFT/fsoft2025_1DD_2/Project/headers/exceptions/OrderNotFoundException.h \
  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/thread \
  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stop_token \
  C:/CLION/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic \
