@@ -440,11 +440,7 @@ void Controller::manageSuppliersMenu() {
                 placeOrderToSupplier();
                 break;
             case 2:
-                try {
-                    viewSupplierOrders();
-                } catch (const OrderNotFoundException& e) {
-                    std::cout << "Error: " << e.what() << std::endl;
-                }
+                viewSupplierOrders();
                 break;
             case 3:
                 viewCompletedSupplierOrders();
@@ -719,54 +715,60 @@ void Controller::deleteClientByEmail() {
 }
 void Controller::viewSupplierOrders() {
     auto& orders = store.getSupplierOrders();
-
     if (orders.empty()) {
         std::cout << "\nNo supplier orders found.\n";
         return;
     }
-    std::cout << "\n--- Supplier Orders ---\n";
-    for (const SupplierOrder& order : orders) {
-        if (!order.getStatus()) { // apenas mostrar pendentes
-            std::cout << "Order #" << order.getOrderNumber()
-                      << " | Supplier: " << order.getSupplier().getName() << "\n";
-            for (const Product& p : order.getProducts()) {
-                std::cout << "  - " << p.getName() << "\n";
-            }
-        }
-    }
-    char option;
-    std::cout << "\nDo you want to cancel an order? (y/n): ";
-    std::cin >> option;
-    if (option == 'y' || option == 'Y') {
-        int cancelId;
-        std::cout << "Enter Order ID to cancel: ";
-        std::cin >> cancelId;
-        auto& ordersRef = store.getSupplierOrders();
-        auto it = std::find_if(ordersRef.begin(), ordersRef.end(),
-                               [cancelId](const SupplierOrder& order) {
-                                   return order.getOrderNumber() == cancelId;
-                               });
-        if (it != ordersRef.end()) {
-            ordersRef.erase(it);
-            std::cout << "Order #" << cancelId << " was cancelled.\n";
-        } else {
-            throw OrderNotFoundException();
-        }
-    } else {
-        std::cout << "No cancellation requested. Completing pending orders in 3 seconds...\n";
-        std::this_thread::sleep_for(std::chrono::seconds(3));
-        for (auto& order : store.getSupplierOrders()) {
-            if (!order.getStatus()) {
-                order.markCompleted();
-                for (const Product& p : order.getProducts()) {
-                    try {
-                        Product& stored = store.findProductById(p.getId());
-                        stored.increaseStock(1);  // assumes 1 unidade por produto
-                    } catch (...) {}
+    while (true) {
+        std::vector<int> pendingIndexes;
+        std::cout << "\n--- Pending Supplier Orders ---\n";
+        int idx = 1;
+        for (size_t i = 0; i < orders.size(); ++i) {
+            if (!orders[i].getStatus()) {
+                std::cout << idx << ". Order #" << orders[i].getOrderNumber()
+                          << " | Supplier: " << orders[i].getSupplier().getName() << "\n";
+                for (const Product& p : orders[i].getProducts()) {
+                    std::cout << "    - " << p.getName() << "\n";
                 }
+                pendingIndexes.push_back(i);
+                ++idx;
             }
         }
-        std::cout << "All pending orders are now marked as completed.\n";
+        if (pendingIndexes.empty()) {
+            std::cout << "\nThere are no pending supplier orders.\n";
+            break;
+        }
+        std::cout << "\nSelect an order to manage (0 to go back): ";
+        int choice;
+        std::cin >> choice;
+        if (choice == 0) break;
+        if (choice < 1 || choice > (int)pendingIndexes.size()) {
+            std::cout << "Invalid option.\n";
+            continue;
+        }
+        int orderIdx = pendingIndexes[choice - 1];
+        SupplierOrder& order = orders[orderIdx];
+        std::cout << "\nOrder #" << order.getOrderNumber() << " | Supplier: " << order.getSupplier().getName() << "\n";
+        for (const Product& p : order.getProducts()) {
+            std::cout << "    - " << p.getName() << "\n";
+        }
+        std::cout << "1. Mark as completed\n";
+        std::cout << "2. Cancel order\n";
+        std::cout << "0. Go back\n";
+        std::cout << "Option: ";
+        int action;
+        std::cin >> action;
+        if (action == 1) {
+            order.markCompleted();
+            std::cout << "Order marked as completed!\n";
+        } else if (action == 2) {
+            orders.erase(orders.begin() + orderIdx);
+            std::cout << "Order cancelled!\n";
+        } else if (action == 0) {
+            continue;
+        } else {
+            std::cout << "Invalid option.\n";
+        }
     }
 }
 void Controller::viewCompletedSupplierOrders() {
@@ -841,6 +843,9 @@ void Controller::completeClientOrder() {
         }
     }
     std::cout << "Client not found.\n";
+}
+void Controller::addProductToClientCart(const std::string& email, const Product& product, int quantity) {
+    clientCarts[email].addProduct(product, quantity);
 }
 
 

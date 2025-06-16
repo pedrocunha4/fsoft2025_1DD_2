@@ -55,6 +55,8 @@ public:
     void viewAllClientsOrders();
     void completeClientOrder();
 
+    void addProductToClientCart(const std::string& email, const Product& product, int quantity);
+
 };
 
 #endif // CONTROLLER_H
